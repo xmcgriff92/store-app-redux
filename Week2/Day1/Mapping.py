@@ -38,16 +38,7 @@ ramit = {
   ]
 }
 
-print(ramit.get('email'))
-print(ramit.get('interests')[0])
-
-for key, value in ramit.items():
-    print(key, value)
-
-    if value == 'jasmine@yahoo.com':
-        value = 'email'
-        print(key, value)
-
+print(ramit['friends'][0]['email'])
 
 # {
 #   'name': 'Ramit',
