@@ -20,5 +20,16 @@ while True:
     if userSelection == "1":
         storeName = input("Enter desired store:")
         groceryItem = input("Enter your grocery item:")
-        price = input("Enter the price of item:")
-        quantity = input("Enter the quantity of item:")
+        itemPrice = input("Enter the price of item:")
+        itemQuantity = input("Enter the quantity of item:")
+        itemIndex = str(storeName) + (groceryItem) + (itemPrice) + (itemQuantity)
+        groceryList.append(itemIndex)
+    if userSelection == "2":
+        print("Here is your current shopping list:\n")
+        print(groceryList)
+    if userSelection == "3":
+        print("You have selected item deletion. Here is your current list:", groceryList)
+        delete = int(input("Which item would you like to delete?:"))
+        del groceryList[groceryItem]
+        
+
