@@ -31,5 +31,5 @@ while True:
         print("You have selected item deletion. Here is your current list:", groceryList)
         delete = int(input("Which item would you like to delete?:"))
         del groceryList[groceryItem]
-        
+
 
