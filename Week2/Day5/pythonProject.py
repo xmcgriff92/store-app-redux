@@ -1,96 +1,72 @@
-import random
-
-def homeMenu():
-    homeMessage = ("""
-    ===========================================
-        ~ Welcome to Basic Street Fighter! ~
-    1. Press '1' to create a fighter
-    2. Press '2' to Fight a formiddable villain
-    3. Press 'q' to Quit game
-    ===========================================
-    """)
-    return print(homeMessage)
-
-homeMenu()
-
-
+# created a universal class for my fighter and villain to avoid creating two for separate entities.
 class Player:
-    def __init__(self, name, strength, health):
+    def __init__(self, name, attack, health):
         self.name = name
-        self.strength = strength
+        self.attack = attack
         self.health = health
-
     
     def damageDelt(self, damage):
-        self.strength - self.health
+        self.health -= damage
 
-    
-    def health(self, health):
-        self.health -= health
-    
+# Using the class, "Player" I used the attributes defined to assign both fighter and villain characteristics.
+fighterName = input("What is your fighters name?:")
 
-
-def warrior():
-    fighterName = input("What is your fighters name?:")
-    fighter = Player(fighterName, 18, 12)
-    print("Here are your fighters stats. GOOD LUCK!:")
-    print("Name:\n", fighterName,"\nStrength:\n18", "\nHealth:\n45")
-    return fighter
+fighter = Player(fighterName, 40, 80)
+print("Here are your fighters stats. GOOD LUCK!:\n")
+print("Fighter:", fighterName," Attack:", fighter.attack, " Health:", fighter.health,"\n")
 
 
-villain = Player("Akuma", 20, 15)
+
+villain = Player("Akuma", 50, 100)
+print("Here are your opponents stats:\n")
+print("Opponent:",villain.name," Attack:", villain.attack, " Health:",villain.health)
 
 
-def fightMenu():
-    fighterInput = input("""
-    Attack
-    =======\n
-    Concede
-    =======\n
-    """)
+# Villain dialogue to set the tone of the battle using simple print statements
+print("\n\nApproaching an eerie battlefield...\n")
+print("A deep voice in the shadows...\n\nAKUMA:\nA true warrior enters the arena with ALL his powers at the ready..\n")
+print("AKUMA:\nYOU ARE NOT READY!\n")
+print("Prepare for battle...\n")
 
-def openingSeq(fighter):
-    print("\nApproaching an eerie battlefield...\n")
-    print("A deep voice in the shadows...\n\nAKUMA:\n'A true warrior enters the arena with ALL his powers at the ready'\n")
-    print("AKUMA:\n'YOU ARE NOT READY!'\n")
-    print("Prepare for battle...\n")
-
+# Created a main loop template call the function over and over again. Also have an outline just in case I would like to come in and expound on new found logic.
+def mainLoop():
+    # Utilized while loop to iterate through player options
     while True:
-        playerInput = fightMenu()
-        if fighter.health >= 0:
-            print(fighter, "has lost the battle.")
+        # Utilized the input functions to take in the users selection to keep track of items being stored
+        selection = input("""What would you like to do?:\n
+        1. Press '1' to attack\n
+        =======================
+        2. Press '2' to concede\n
+        =======================
+        3. Press '3' to Quit\n
+        =======================
+        """)
 
-        # if playerInput == "attack":
-        #     print("you have made a move")
-        # if playerInput == 'Attack':
-        #     print("you have attacked")
-            # fighter.damageDelt(villain)
-            # if villain.health > 0:
-            #     print("Akuma has %d health left" % (villain.health))
-            # villainAttack = random.randint(1,15)
-            # if villainAttack > 12 and villain.health > 2:
-            #     villain.damageDelt(fighter)
-            #     print("Akuma has defeated you!")
-            # elif villainAttack < 7 and villain.health < 5:
-            #     print("You have defeated Akuma!")
-            #     break
-
-
-
-
-
-while True:
-    playerInput = input("What would you like to do?:")
-    if playerInput == "1":
-        fighter = warrior()
+        if selection == "1":
+            print("You have chosen to attack,", villain.name, ". However,", villain.name, "has countered your attack with a swift kick!")
+            fighter.damageDelt(villain.attack/2 - 15) 
+            print(fighter.name,", your health is currently at", fighter.health,".")
+            villain.damageDelt(fighter.attack/2 + 5)
+            if fighter.health <= 50 and villain.health <= 60:
+                print(fighter.name, ", you should consider conceeding!")
+                print("Your current health is at",fighter.health)
+            if fighter.health <= 35:
+                print(fighter.name,", what do you have to prove?!")
+                if fighter.health <= 0:
+                    print("You have been defeated. Sorry, you lose.")
+                    print(villain.name, ": your best isn't good enough. Leave my presence..")
+            elif villain.health <= 10:
+                print("Congratulations,",fighter.name, "you have defeated,", villain.name,"!\n")
+                break
     
-    if playerInput == "2":
-        openingSeq(fighter)
-    
-    if playerInput == "q":
-        break
+        elif selection == "2":
+            print(fighter.name, "You have chosen to concede. Unfortunately,", villain.name, "has hit you with a mean punch to kick combo to send you on your way!\n")
+            fighter.damageDelt(villain.attack)
+            print(villain.name, ": YOU ARE NOT WORHTY.\n")
+            if fighter.health <= 50:
+                break
+        elif selection == "3":
+            break
 
 
-# number = random.randint(1,200)
-# print(number)
-# print(number)
+mainLoop()
