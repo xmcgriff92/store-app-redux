@@ -28,7 +28,7 @@ print("A deep voice in the shadows...\n\nAKUMA:\nA true warrior enters the arena
 print("AKUMA:\nYOU ARE NOT READY!\n")
 print("Prepare for battle...\n")
 
-# Created a main loop template call the function over and over again. Also have an outline just in case I would like to come in and expound on new found logic.
+# Created a main loop template to be able to call the function over and over again. Also have an outline just in case I would like to come in and expound on new found logic.
 def mainLoop():
     # Utilized while loop to iterate through player options
     while True:
@@ -41,7 +41,7 @@ def mainLoop():
         3. Press '3' to Quit\n
         =======================
         """)
-
+# In this section I utilized if/elif statements giving my loop conditional requirements to end if statements were met. I alsi called upon certain attributes in the previous class to draw information to make the statements work.
         if selection == "1":
             print("You have chosen to attack,", villain.name, ". However,", villain.name, "has countered your attack with a swift kick!")
             fighter.damageDelt(villain.attack/2 - 15) 
