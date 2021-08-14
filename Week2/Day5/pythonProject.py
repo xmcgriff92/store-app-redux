@@ -32,7 +32,7 @@ print("Prepare for battle...\n")
 def mainLoop():
     # Utilized while loop to iterate through player options
     while True:
-        # Utilized the input functions to take in the users selection to keep track of items being stored
+        # Utilized input function to take in the users selection to keep track of items being stored 
         selection = input("""What would you like to do?:\n
         1. Press '1' to attack\n
         =======================
@@ -41,7 +41,7 @@ def mainLoop():
         3. Press '3' to Quit\n
         =======================
         """)
-# In this section I utilized if/elif statements giving my loop conditional requirements to end if statements were met. I alsi called upon certain attributes in the previous class to draw information to make the statements work.
+# In this section I utilized if/elif statements giving my loop conditional requirements to continue or end if statements were met. I also called upon certain attributes in the previous class to draw information to make the statements work.
         if selection == "1":
             print("You have chosen to attack,", villain.name, ". However,", villain.name, "has countered your attack with a swift kick!")
             fighter.damageDelt(villain.attack/2 - 15) 
