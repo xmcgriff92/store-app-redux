@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(37, 35, 35);
+}
+
+img {
+    margin-top: 150px;
+    margin-left: 480px;
+    margin-right: 550px;
+    display: inline-block;
+    height: 150px;
+    width: 400px;
+}
+
+form {
+    margin-left: 460px;
+    
+}
+
+input {
+    width: 425px;
+}

@@ -32,7 +32,7 @@ print("Prepare for battle...\n")
 def mainLoop():
     # Utilized while loop to iterate through player options
     while True:
-        # Utilized input function to take in the users selection to keep track of items being stored 
+        # Utilized input function to take in the users selection to keep track of items being stored
         selection = input("""What would you like to do?:\n
         1. Press '1' to attack\n
         =======================
