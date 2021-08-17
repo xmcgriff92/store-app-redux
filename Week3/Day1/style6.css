@@ -1,0 +1,29 @@
+body {
+    background-image: url(https://vistapointe.net/images/teenage-mutant-ninja-turtles-1990-1.jpg);
+    background-size: cover;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    color: yellowgreen;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 5px 5px 0 black;
+}
+
+h2 {
+    font-size: 68px;
+    text-align: center;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 2px 2px 0 yellowgreen;
+}
+
+h3 {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 400px;
+    color: yellow;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 4px 4px 0 black;  
+}
