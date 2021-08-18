@@ -1,0 +1,17 @@
+.main-container {
+    height: 150px;
+    width: 150px;
+}
+
+.box {
+    border: 1px dotted black;
+    height: 50px;
+    width: 50px;
+    background-color: rgb(240, 215, 132);
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+    "column row col";
+}

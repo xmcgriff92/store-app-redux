@@ -1,0 +1,20 @@
+.red-box {
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    margin: 5px;
+  }
+  .flex {
+    height: 150px;
+    border: 2px solid pink;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    border: 2px solid violet;
+    margin: 5px;
+  }
