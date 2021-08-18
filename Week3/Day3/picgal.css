@@ -27,3 +27,15 @@ img {
     transition: 1s;
 }
 
+@media only screen and (max-width: 320px) {
+     .grid {
+        grid-template-columns: repeat(3, 98%);
+        grid-template-rows: auto;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 98%);
+        grid-template-rows: auto;
+    }
+}
