@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+img {
+    border: 2px solid black;
+    box-shadow: 5px 5px 5px black;
+    height: 250px;
+    width: 450px;
+    margin: 50px;
+    padding: 30px;
+}
+
+
+.header-1 {
+    margin: 75px;
+    padding: 50px
+}
+
+
+
+.row align-items-center {
+    margin: 30px;
+}
