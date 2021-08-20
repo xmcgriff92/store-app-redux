@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(34, 30, 30);
+    background-color: rgb(12, 12, 12);
 }
 
 button {
@@ -10,12 +10,19 @@ button {
 
 h1 {
     color: white;
+    font-family:sans-serif;
+}
+
+p {
+    color: white;
+    margin-bottom: ;
 }
 
 .button-1 {
     background-color: red;
     color: white;
     border: none;
+    width: 60px;
 
 }
 
@@ -23,17 +30,49 @@ h1 {
     background-color: black;
     color: white;
     border: 1px solid rgb(78, 76, 76);
+    width: 60px;
 
 }
 
 .header {
     background-color: black;
     box-shadow: 5px 5px 5px black;
+    height: 55px;
 
 }
 
 .logo {
     height: 50px;
     width: 100px;
+}
+
+.description {
+
+}
+
+.main-container {
+
+    width: 600px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px 5px;
+    height: 750px;
+    width: 500px;
+
+}
+
+img {
+    width: 250px;
+    height: 135px;
+}
+
+.header-1, .header-2, .header-3 {
+    font-size: medium;
+    color: white;
 }
 
