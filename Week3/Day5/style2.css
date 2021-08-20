@@ -1,0 +1,85 @@
+.main {
+
+
+
+}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(25, 1fr);
+grid-template-rows: repeat(25, 1fr);
+height: 750px;
+}
+
+.box-1{
+
+    background-color: cadetblue;
+    grid-column: 1 / 25;
+    grid-row: 1 / 8;
+}
+
+.box-2 {
+
+    background-color: rgb(190, 73, 73);
+    grid-column: 1 / 8;
+    grid-row: 8 / 25;
+
+}
+
+.box-3 {
+
+    background-color:sienna;
+    grid-column: 8 / 15;
+    grid-row: 8 / 13;
+}
+
+.box-4 {
+
+    background-color:purple;
+    grid-column: 15 / 25;
+    grid-row: 8 / 13;
+
+}
+
+.box-5 {
+    background-color: yellow;
+    grid-column: 8 / 18;
+    grid-row: 13 / 18;
+
+}
+
+.box-6 {
+
+    background-color: yellowgreen;
+    grid-column: 18 / 25;
+    grid-row: 13 / 18;
+
+}
+
+.box-7 {
+
+    background-color: rgb(243, 136, 211);
+    grid-column: 8 / 14;
+    grid-row: 18 / 21;
+
+}
+
+.box-8 {
+
+    background-color: palegreen;
+    grid-column: 14 / 20;
+    grid-row: 18 / 21;
+
+}
+
+.box-9 {
+    background-color: red;
+    grid-column: 20 / 25;
+    grid-row: 18/ 21;
+}
+
+.box-10 {
+    background-color: rgb(138, 132, 132);
+    grid-column: 8 / 25;
+    grid-row: 21 / 25;
+}
