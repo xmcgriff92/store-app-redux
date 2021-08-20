@@ -1,0 +1,35 @@
+.header {
+    border: 2px solid black;
+}
+
+h1 {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 700px;
+}
+
+.sub-1 {
+    background-color: blueviolet;
+    margin-top: 25px;
+    margin-right: 30px;
+    width: 300px;
+    height: 600px;
+
+}
+
+.sub-2 {
+    background-color: cadetblue;
+    margin-top: 25px;
+    margin-bottom: 200px;
+    width: 980px;
+    height: auto;
+}
+
+.footer {
+    border: 2px solid black;
+}
