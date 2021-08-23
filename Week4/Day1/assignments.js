@@ -72,3 +72,33 @@ printNumbers()
 
 // #5 
 
+function printSquare (dimension) {
+    for (let index = 0; index < dimension; index++){
+        let row = "*";
+        for (let index = 0; index < dimension; index++) {
+            row += "*";
+        }
+        console.log(row + "");
+    }
+}
+
+printSquare();
+
+// Write function printBox which is given a width and height and prints a 
+// hollow box of those given dimensions.
+
+// #6
+
+function printBox (width, height) {
+    for(let index = 0; index < width; index++){
+        let row = "-"
+        for (let index = 0; index < height; index++){
+            let col = "|";
+            row += "-"
+            col += "|"
+        }
+        console.log(row + col)
+    }
+}
+
+printBox(5,6)
