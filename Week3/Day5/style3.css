@@ -24,6 +24,11 @@ p {
     font-family: sans-serif;
 }
 
+button:hover {
+    color: black;
+    cursor: pointer;
+}
+
 
 
 .button-1 {
