@@ -3,6 +3,7 @@
 // school is (subject)
 
 // #1
+
 function madlib (name, subject){
     return console.log((name,"favorite subject in school is", subject))
 }
@@ -32,7 +33,6 @@ tipAmount(40, fair)
  // use of tipAmount as a sub-task.
 
  // #3 
-
 
 function totalAmount (billAmount, tipAmount){
     let tip = billAmount * tipAmount
@@ -89,16 +89,55 @@ printSquare();
 
 // #6
 
-function printBox (width, height) {
-    for(let index = 0; index < width; index++){
-        let row = "-"
-        for (let index = 0; index < height; index++){
-            let col = "|";
-            row += "-"
-            col += "|"
-        }
-        console.log(row + col)
-    }
+//function printBox (width, height) {
+  //  for(let x = 1; x <= width; x++){
+    //    for (let y = 1; y <= height; y++){
+      //      if (x == 1 || x == width)
+        //    console.log("-");
+          //  if (y == 1 || y == height)
+    //    }
+   // }
+        
+//}
+
+// printBox(3,6);
+
+// Write a function printBanner which is given some text and prints a banner with
+// a border surrounding the text. The border has to stretch to the length of the text.
+
+// #7
+
+function printBanner (message){
+    const banner = `${message}`;
+
+    console.log("-".repeat(message.length));
+    console.log(banner);
+    console.log("-".repeat(message.length));
 }
 
-printBox(5,6)
+printBanner ("Print whatever you like")
+
+
+// Write a function leetspeak which is given a string, and returns the leetspeak 
+// equivalent of the string. To convert text to its leetspeak version, make the 
+// following substitutions:
+
+// A => 4 E => 3 G => 6 I => 1 O => 0 S => 5 T => 7
+
+// #8
+
+function leetSpeak (str) {
+    const leet = {
+        A: '4',
+        E: '3',
+        G: '6',
+        I: '1',
+        O: '0',
+        S: '5',
+        T: '7'
+    }
+    return str.replace([AEGIOST]);
+    console.log(str);
+}
+
+leetSpeak();
