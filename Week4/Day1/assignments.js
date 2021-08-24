@@ -92,13 +92,7 @@ printSquare();
 //function printBox (width, height) {
   //  for(let x = 1; x <= width; x++){
     //    for (let y = 1; y <= height; y++){
-      //      if (x == 1 || x == width)
-        //    console.log("-");
-          //  if (y == 1 || y == height)
-    //    }
-   // }
-        
-//}
+   
 
 // printBox(3,6);
 
@@ -125,19 +119,3 @@ printBanner ("Print whatever you like")
 // A => 4 E => 3 G => 6 I => 1 O => 0 S => 5 T => 7
 
 // #8
-
-function leetSpeak (str) {
-    const leet = {
-        A: '4',
-        E: '3',
-        G: '6',
-        I: '1',
-        O: '0',
-        S: '5',
-        T: '7'
-    }
-    return str.replace([AEGIOST]);
-    console.log(str);
-}
-
-leetSpeak();
