@@ -1,0 +1,16 @@
+body {
+
+}
+
+h1{
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    justify-content: ;
+    background-color: rgb(220, 194, 245);
+    margin-left: 242px;
+    width: 350px;
+    height:400px;
+}
