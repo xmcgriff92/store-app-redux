@@ -24,15 +24,17 @@ button {
     box-shadow: 1px 1px 1px black;
 }
 
-li {
-    color: white;
+#user-list {
+    margin: 5px;
 }
 .other-container {
+    display: flex;
+    flex-direction: column;
     font-size: 40px;
-    margin-left: 600px;
+    width:350px;
+    margin-left: 580px;
     margin-top: 25px;
     color: white;
-    display: flex;
   
 }
 
