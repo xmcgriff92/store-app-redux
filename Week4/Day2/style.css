@@ -1,16 +1,41 @@
 body {
+    background-color: rgb(146, 216, 146);
 
 }
 
 h1{
     text-align: center;
+    color: white;
+}
+
+input {
+    border: 2px dotted white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px black;
+    padding: 3px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px black;
+}
+
+li {
+    color: white;
+}
+.other-container {
+    margin-left: 350px;
+    margin-top: 25px;
+    color: white;
+    display: flex;
+  
 }
 
 .main-container {
-    display: flex;
-    justify-content: ;
-    background-color: rgb(220, 194, 245);
-    margin-left: 242px;
-    width: 350px;
-    height:400px;
+  margin-left: 375px;
+
 }
