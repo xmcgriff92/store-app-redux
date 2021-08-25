@@ -28,7 +28,8 @@ li {
     color: white;
 }
 .other-container {
-    margin-left: 350px;
+    font-size: 40px;
+    margin-left: 600px;
     margin-top: 25px;
     color: white;
     display: flex;
@@ -36,6 +37,6 @@ li {
 }
 
 .main-container {
-  margin-left: 375px;
+  margin-left: 615px;
 
 }
