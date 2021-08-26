@@ -31,6 +31,6 @@ div2.id = "other-container";
 document.body.append(div2)
 // end of second container section
 
-// end of HTML structure
+// end of HTML structure!
 
 //
