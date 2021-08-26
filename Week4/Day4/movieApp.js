@@ -35,6 +35,6 @@ document.body.append(div2)
 
 // creating function to add items intp input
 
-async function addMovieItems (){
-    
+async function addMovieSelection (){
+
 }
