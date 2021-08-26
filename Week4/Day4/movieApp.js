@@ -1,4 +1,6 @@
-// header for movie application
+// start of HTML structure within DOM
+
+// header for the movie application
 const header =document.createElement("h1")
 header.innerHTML= "The Movie Searcher"
 document.body.append(header)
@@ -27,3 +29,8 @@ button.innerHTML = "Search";
 const div2 =document.createElement("div")
 div2.id = "other-container";
 document.body.append(div2)
+// end of second container section
+
+// end of HTML structure
+
+//
