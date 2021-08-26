@@ -33,4 +33,8 @@ document.body.append(div2)
 
 // end of HTML structure!
 
-//
+// creating function to add items intp input
+
+async function addMovieItems (){
+    
+}
