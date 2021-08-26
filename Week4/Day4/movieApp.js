@@ -10,7 +10,7 @@ document.body.append(div1)
 div1.id = "main-container";
 // 
 
-// creating input and button for application within div1.
+// creating an input and button for application within div1.
 const input =document.createElement("input");
 div1.appendChild(input);
 input.id = "user-selection";
@@ -24,4 +24,6 @@ button.innerHTML = "Search";
 // end of main container section
 
 // creating a second div (div2) to append movies within div upon search
-
+const div2 =document.createElement("div")
+div2.id = "other-container";
+document.body.append(div2)
