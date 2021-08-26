@@ -8,9 +8,9 @@ document.body.append(header)
 const div1 =document.createElement("div");
 document.body.append(div1)
 div1.id = "main-container";
-// end of main container section
+// 
 
-// creating input and button for app within div1.
+// creating input and button for application within div1.
 const input =document.createElement("input");
 div1.appendChild(input);
 input.id = "user-selection";
@@ -19,4 +19,9 @@ input.placeholder = "enter movie here";
 input.type = "text";
 const button =document.createElement("button");
 div1.appendChild(button);
+button.className = "search-button";
+button.innerHTML = "Search";
+// end of main container section
+
+// creating a second div (div2) to append movies within div upon search
 
