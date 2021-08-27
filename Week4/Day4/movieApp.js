@@ -20,7 +20,7 @@ input.className = "entry";
 input.placeholder = "enter movie here";
 input.type = "text";
 
-// button section
+// button section & class name
 const button =document.createElement("button");
 div1.appendChild(button);
 button.className = "search-button";
@@ -34,6 +34,7 @@ document.body.append(div2)
 // end of second container section
 
 // end of HTML structure!
+
 
 // creating function to add items intp input
 
