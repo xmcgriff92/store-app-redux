@@ -42,7 +42,6 @@ async function getWeatherData(){
     const getInput =document.querySelector(".entry").value;
     const getWeather = await fetch(weatherApi + `&q=${getInput}`);
     const jsonWeather = await getWeather.json();
-    console.log(jsonWeather)
 
     const temperature =document.createElement("h2");
     temperature.innerHTML = jsonWeather.main.temp;
