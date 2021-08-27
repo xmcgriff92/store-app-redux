@@ -19,6 +19,8 @@ input.id = "user-selection";
 input.className = "entry";
 input.placeholder = "enter movie here";
 input.type = "text";
+
+// button section
 const button =document.createElement("button");
 div1.appendChild(button);
 button.className = "search-button";
