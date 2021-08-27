@@ -1,4 +1,43 @@
+body {
+    background-color: rgb(144, 223, 247);
+}
+
 h1 {
-    color: red;
+    color: white;
     font-size: 45px;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 4px 4px 4px black;
+}
+
+input {
+    background-color: grey;
+}
+
+button {
+    background-color: red;
+}
+
+input, button {
+    display: inline;
+}
+
+.entry {
+    text-align: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 380px;
+}
+
+.other-container {
+
 }

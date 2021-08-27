@@ -1,6 +1,7 @@
 // create header for weather application
 const header =document.createElement("h1")
 header.innerHTML = "The Weather App"
+header.className = "the-header"
 document.body.append(header)
 
 // create container for input and button for search
@@ -42,7 +43,7 @@ async function getWeatherData(){
     const jsonWeather = await getWeather.json();
     console.log(jsonWeather)
 
-    const temperature =document.createElement("h1");
+    const temperature =document.createElement("h2");
     temperature.innerHTML = jsonWeather.main.temp;
     tempContainer.append(temperature)
 
