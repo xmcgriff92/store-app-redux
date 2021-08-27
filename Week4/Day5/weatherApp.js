@@ -35,7 +35,8 @@ const apiKey = "f0fc625ac1e39925a536e0a2cf0990e0"
 const weatherApi = `https://api.openweathermap.org/data/2.5/weather?appid=${apiKey}&units=imperial`;
 
 
-// async function section
+// start of async function section
+
 async function getWeatherData(){
     tempContainer.innerHTML = ""
     const getInput =document.querySelector(".entry").value;
@@ -50,3 +51,6 @@ async function getWeatherData(){
 }
 
 button.addEventListener("click", () => getWeatherData())
+
+//
+// end of function
