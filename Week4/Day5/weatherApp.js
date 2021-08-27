@@ -53,4 +53,4 @@ async function getWeatherData(){
 button.addEventListener("click", () => getWeatherData())
 
 //
-// end of function
+// end of function section
