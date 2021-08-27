@@ -16,15 +16,21 @@ h2 {
 }
 
 input {
-    background-color: grey;
+    color: black;
+    background-color: rgb(211, 205, 205);
+    border: 1px solid black;
+    border-radius: 4px;
 }
 
 button {
-    background-color: red;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    border-radius: 4px;
 }
 
 input, button {
     display: inline;
+    padding: 4px;
 }
 
 .entry {
