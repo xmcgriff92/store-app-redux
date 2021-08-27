@@ -9,7 +9,7 @@ const div1 =document.createElement("div")
 div1.className = "main-container";
 document.body.append(div1)
 
-// create input and search button within the div1
+// create input and search button within the div
 const input =document.createElement("input")
 input.className = "entry"
 input.placeholder = "City or Zip"
