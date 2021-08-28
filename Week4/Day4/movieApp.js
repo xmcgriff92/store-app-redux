@@ -35,7 +35,7 @@ document.body.append(contentContainer)
 // end of HTML structure!
 
 
-// creating function for search button
+// creating function for search button and input field
 const buttonSearch =document.querySelector(".search-button");
 
 function getMovies (){
