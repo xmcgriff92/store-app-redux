@@ -41,11 +41,13 @@ const buttonSearch =document.querySelector(".search-button");
 
 // creating section for async funtion and api information
 const apiKey = "de67e333";
-const url = `http://www.omdbapi.com/?apikey=${apiKey}`;
+const apiUrl = `http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}`;
 
-function getMovies (){
+async function getMovies (){
     const userInput =document.querySelector(".entry").value;
-    console.log(`${userInput}`)
+    const fetchTitles = await fetch(`${apiUrl}&s=${userInput}`);
+    const jsonMovies = await fetchTitles.json();
+    console.log(jsonMovies);
 }
 
 buttonSearch.addEventListener("click", () => getMovies())
