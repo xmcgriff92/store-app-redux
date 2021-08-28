@@ -7,29 +7,28 @@ document.body.append(header)
 // end of header section
 
 // creating main container (div1) as well as class and id within DOM.
-const div1 =document.createElement("div");
-document.body.append(div1)
-div1.id = "main-container";
+const mainContainer =document.createElement("div");
+document.body.append(mainContainer)
+mainContainer.className = "main-container";
 // 
 
 // creating an input and button for application within div1.
 const input =document.createElement("input");
-div1.appendChild(input);
-input.id = "user-selection";
+mainContainer.appendChild(input);
 input.className = "entry";
 input.placeholder = "enter movie here";
 input.type = "text";
 
 // button section & class name
 const button =document.createElement("button");
-div1.appendChild(button);
+mainContainer.appendChild(button);
 button.className = "search-button";
 button.innerHTML = "Search";
 // end of main container section
 
 // creating a second div (div2) to append movies within div upon search
 const contentContainer =document.createElement("div")
-contentContainer.id = "other-container";
+contentContainer.className = "other-container";
 document.body.append(contentContainer)
 // end of second container section
 //
@@ -40,7 +39,8 @@ document.body.append(contentContainer)
 const buttonSearch =document.querySelector(".search-button");
 
 function getMovies (){
-    console.log("got your movie")
+    const userInput =document.querySelector(".entry").value;
+    console.log(`${userInput}`)
 }
 
 buttonSearch.addEventListener("click", () => getMovies())
