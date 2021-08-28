@@ -38,14 +38,14 @@ document.body.append(contentContainer)
 // creating function for search button and input field
 const buttonSearch =document.querySelector(".search-button");
 
+
+// creating section for async funtion and api information
+const apiKey = "de67e333";
+const url = `http://www.omdbapi.com/?apikey=${apiKey}`;
+
 function getMovies (){
     const userInput =document.querySelector(".entry").value;
     console.log(`${userInput}`)
 }
 
 buttonSearch.addEventListener("click", () => getMovies())
-
-
-// creating section for async funtion and api information
-const apiKey = "de67e333"
-
