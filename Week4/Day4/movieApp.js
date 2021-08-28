@@ -38,6 +38,15 @@ document.body.append(div2)
 
 // creating function to add items intp input
 
+const apiKey = "de67e333"
+const movieApi = `http://www.omdbapi.com/?apikey=${apiKey}&`;
+
+
 async function addMovieSelection (){
+    const movieData = await fetch(`http://www.omdbapi.com/?apikey=${movieApi}&`);
+    const jsonMovies = await movieData.json();
+
+    console.log(movieData)
+    
 
 }

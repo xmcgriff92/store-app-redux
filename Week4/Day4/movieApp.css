@@ -1,6 +1,11 @@
 h1 {
+    text-align: center;
     color: red;
     font-size: 45px;
+}
+
+#main-container {
+    text-align: center;
 }
 
 /* .main-container {
