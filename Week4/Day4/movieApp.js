@@ -28,25 +28,24 @@ button.innerHTML = "Search";
 // end of main container section
 
 // creating a second div (div2) to append movies within div upon search
-const div2 =document.createElement("div")
-div2.id = "other-container";
-document.body.append(div2)
+const contentContainer =document.createElement("div")
+contentContainer.id = "other-container";
+document.body.append(contentContainer)
 // end of second container section
-
+//
 // end of HTML structure!
 
 
-// creating function to add items intp input
+// creating function for search button
+const buttonSearch =document.querySelector(".search-button");
 
-const apiKey = "de67e333"
-const movieApi = `http://www.omdbapi.com/?apikey=${apiKey}&`;
-
-
-async function addMovieSelection (){
-    const movieData = await fetch(`http://www.omdbapi.com/?apikey=${movieApi}&`);
-    const jsonMovies = await movieData.json();
-
-    console.log(movieData)
-    
-
+function getMovies (){
+    console.log("got your movie")
 }
+
+buttonSearch.addEventListener("click", () => getMovies())
+
+
+// creating section for async funtion and api information
+const apiKey = "de67e333"
+
