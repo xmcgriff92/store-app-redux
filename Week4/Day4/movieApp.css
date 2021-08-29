@@ -4,15 +4,12 @@ h1 {
     font-size: 45px;
 }
 
+
 .main-container {
     text-align: center;
 }
 
-/* .main-container {
+.other-container {
+    display:grid;
 
-}
-
- .other-container {
-    display: grid;
-
-} */
+  }

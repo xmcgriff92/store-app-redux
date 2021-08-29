@@ -38,7 +38,6 @@ document.body.append(contentContainer)
 // creating function for search button and input field
 const buttonSearch =document.querySelector(".search-button");
 
-
 // creating section for async funtion and api information
 const apiKey = "de67e333";
 const apiUrl = `http://www.omdbapi.com/?i=tt3896198&apikey=${apiKey}`;
@@ -47,7 +46,16 @@ async function getMovies (){
     const userInput =document.querySelector(".entry").value;
     const fetchTitles = await fetch(`${apiUrl}&s=${userInput}`);
     const jsonMovies = await fetchTitles.json();
-    console.log(jsonMovies);
+    contentContainer.innerHTML = "";
+   
+    for (const movie of jsonMovies.Search) {
+        const movieTitle =document.createElement("h2")
+        const movieImage =document.createElement("img");
+        movieTitle.innerText = movie.Title
+        contentContainer.append(movieTitle, movieImage)
+        movieImage.src = movie.Poster;
+    }
 }
+// end of async section
 
 buttonSearch.addEventListener("click", () => getMovies())
