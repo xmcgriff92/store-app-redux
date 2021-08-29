@@ -57,5 +57,6 @@ async function getMovies (){
     }
 }
 // end of async section
+//
 
 buttonSearch.addEventListener("click", () => getMovies())
