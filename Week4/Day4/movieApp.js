@@ -2,7 +2,7 @@
 
 // header for the movie application
 const header =document.createElement("h1")
-header.innerHTML= "The Movie Searcher"
+header.innerHTML= "The Movie Searcher:"
 document.body.append(header)
 // end of header section
 
