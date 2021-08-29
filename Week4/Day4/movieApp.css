@@ -1,6 +1,11 @@
+body {
+    background-color: black;
+}
+
 h1 {
     text-align: center;
     color: red;
+    text-shadow: 1px 1px 1px white;
     font-size: 45px;
 }
 
@@ -10,6 +15,8 @@ h1 {
 }
 
 .other-container {
-    display:grid;
-
-  }
+    margin: 30px;
+    padding: 5px;
+    text-align: center;
+    background-color: crimson;
+}
