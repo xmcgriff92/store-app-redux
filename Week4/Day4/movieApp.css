@@ -46,7 +46,7 @@ button {
     margin: 30px;
     padding: 5px;
     text-align: center;
-    background-color: crimson;
-    border: 3px solid white;
+    background-color: rgba(241, 41, 41, 0.514);
+    border: 3px solid rgb(255, 255, 255);
     border-radius: 4px;
 }
