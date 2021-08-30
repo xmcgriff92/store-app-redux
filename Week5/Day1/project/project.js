@@ -34,3 +34,9 @@ document.body.append(secondHeader);
 const contentContainer =document.createElement("div");
 contentContainer.className = "content.container";
 document.body.append(contentContainer);
+//
+// creating async function for api and other components
+async function getBooksPlease (){
+    const fetchBooks = await fetch("https://openlibrary.org/developers/api");
+    console.log(fetchBooks)
+}
