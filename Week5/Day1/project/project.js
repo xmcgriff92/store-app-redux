@@ -2,7 +2,7 @@
 
 // creating the main header for the search page
 const mainHeader =document.createElement("h1");
-mainHeader.innerHTML = "Search book here:"
+mainHeader.innerHTML = "Search book here"
 document.body.append(mainHeader);
 //
 // end of header section
@@ -16,7 +16,7 @@ document.body.append(mainContainer);
 const inputField =document.createElement("input");
 mainContainer.appendChild(inputField);
 inputField.className = "entry";
-inputField.placeholder = "search book here";
+inputField.placeholder = "enter book here";
 inputField.type = "text";
 //
 // creating button field with class
@@ -24,6 +24,11 @@ const searchButton =document.createElement("button");
 mainContainer.appendChild(searchButton);
 searchButton.innerHTML = "Search";
 searchButton.className  = "search-button";
+//
+// second header 
+const secondHeader =document.createElement("h2")
+secondHeader.innerHTML = "Here is your selection:"
+document.body.append(secondHeader)
 //
 // creating container to display books found from search
 const contentContainer =document.createElement("div");
