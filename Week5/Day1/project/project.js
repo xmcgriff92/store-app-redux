@@ -15,4 +15,12 @@ document.body.append(mainContainer);
 // creating a child element within the main container with the input and button functions
 const inputField =document.createElement("input");
 mainContainer.appendChild(inputField);
-inputField.className = "input"
+inputField.className = "entry";
+inputField.placeholder = "enter book here";
+inputField.type = "text";
+//
+// creating button field with class
+const searchButton =document.createElement("button");
+mainContainer.appendChild(searchButton);
+searchButton.innerHTML = "Search";
+searchButton.className  = "search-button";
