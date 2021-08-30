@@ -25,6 +25,9 @@ mainContainer.appendChild(searchButton);
 searchButton.innerHTML = "Search";
 searchButton.className  = "search-button";
 //
+// end of main container section!
+
+
 // second header 
 const secondHeader =document.createElement("h2");
 secondHeader.innerHTML = "Here is your selection:";
@@ -36,6 +39,7 @@ contentContainer.className = "content.container";
 document.body.append(contentContainer);
 //
 const buttonSearch =document.querySelector(".search-button");
+//
 // creating function for user input and button functionapity. creating async function for api and other components
 function getBooksPlease(){
     const userInput =document.querySelector(".entry").value;
