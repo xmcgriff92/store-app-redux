@@ -36,7 +36,7 @@ contentContainer.className = "content.container";
 document.body.append(contentContainer);
 //
 const buttonSearch =document.querySelector(".search-button");
-// creating async function for api and other components
+// creating function fpr user input and button functionapity. creating async function for api and other components
 function getBooksPlease(){
     const userInput =document.querySelector(".entry").value;
     console.log(userInput)
