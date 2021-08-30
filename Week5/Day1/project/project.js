@@ -35,8 +35,13 @@ const contentContainer =document.createElement("div");
 contentContainer.className = "content.container";
 document.body.append(contentContainer);
 //
+const buttonSearch =document.querySelector(".search-button");
 // creating async function for api and other components
-async function getBooksPlease (){
-    const fetchBooks = await fetch("https://openlibrary.org/developers/api");
-    console.log(fetchBooks)
+function getBooksPlease(){
+    const userInput =document.querySelector(".entry").value;
+    console.log(userInput)
+   // const fetchBooks = await fetch("https://openlibrary.org/developers/api");
+    //console.log(fetchBooks)
 }
+
+buttonSearch.addEventListener("click", () => getBooksPlease())
