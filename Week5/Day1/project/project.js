@@ -16,7 +16,7 @@ document.body.append(mainContainer);
 const inputField =document.createElement("input");
 mainContainer.appendChild(inputField);
 inputField.className = "entry";
-inputField.placeholder = "enter book here";
+inputField.placeholder = "search book here";
 inputField.type = "text";
 //
 // creating button field with class
@@ -24,3 +24,8 @@ const searchButton =document.createElement("button");
 mainContainer.appendChild(searchButton);
 searchButton.innerHTML = "Search";
 searchButton.className  = "search-button";
+//
+// creating container to display books found from search
+const contentContainer =document.createElement("div");
+contentContainer.className = "content.container";
+document.body.append(contentContainer);
