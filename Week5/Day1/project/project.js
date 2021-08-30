@@ -26,9 +26,9 @@ searchButton.innerHTML = "Search";
 searchButton.className  = "search-button";
 //
 // second header 
-const secondHeader =document.createElement("h2")
-secondHeader.innerHTML = "Here is your selection:"
-document.body.append(secondHeader)
+const secondHeader =document.createElement("h2");
+secondHeader.innerHTML = "Here is your selection:";
+document.body.append(secondHeader);
 //
 // creating container to display books found from search
 const contentContainer =document.createElement("div");
