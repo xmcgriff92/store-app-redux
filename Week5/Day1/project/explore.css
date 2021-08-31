@@ -15,13 +15,15 @@
 }
 
 h2 {
-    margin-top: px;
     padding: 15px;
-    background-color: blueviolet;
+    background-color: rgb(88, 86, 90);
+    color: white;
     text-align: center;
+    box-shadow: 3px 3px 3px black;
 }
 
 .container {
+    margin-top: 15px;
     display: grid;
     grid-row-gap: 5px;
 }
