@@ -2,7 +2,7 @@
 
 // creating the main header for the search page
 const mainHeader =document.createElement("h1");
-mainHeader.innerHTML = "Search book here"
+mainHeader.innerHTML = "Book Finder"
 document.body.append(mainHeader);
 //
 // end of header section
