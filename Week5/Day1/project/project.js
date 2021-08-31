@@ -49,8 +49,19 @@ async function getBooksPlease(){
     apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${userInput}`;
     const fetchBooks = await fetch(`${apiUrl}`);
     const jsonBooks = await fetchBooks.json();
+    contentContainer.innerHTML= "";
     console.log(jsonBooks)
-    //console.log(fetchBooks)
+    
+
+    //for (const book of jsonBooks.items) {
+     //   const bookTitle =document.createElement("h2");
+     //   const bookImage =document.createElement("img");
+     //   bookTitle.innerText = book.volumeInfo.title
+    //    bookImage.src = book.volumeInfo.thumbnail
+    //    contentContainer.append(bookImage,bookTitle)
+    //    console.log(bookTitle)
+        
+  //  }
 }
 
 buttonSearch.addEventListener("click", () => getBooksPlease())

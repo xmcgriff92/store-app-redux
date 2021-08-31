@@ -47,14 +47,15 @@ async function getMovies (){
     const fetchTitles = await fetch(`${apiUrl}&s=${userInput}`);
     const jsonMovies = await fetchTitles.json();
     contentContainer.innerHTML = "";
+    console.log(jsonMovies)
    
-    for (const movie of jsonMovies.Search) {
-        const movieTitle =document.createElement("h2")
-        const movieImage =document.createElement("img");
-        movieTitle.innerText = movie.Title
-        contentContainer.append(movieTitle, movieImage)
-        movieImage.src = movie.Poster;
-    }
+    //for (const movie of jsonMovies.Search) {
+     //   const movieTitle =document.createElement("h2")
+      //  const movieImage =document.createElement("img");
+      //  movieTitle.innerText = movie.Title
+     //   contentContainer.append(movieTitle, movieImage)
+      //  movieImage.src = movie.Poster;
+   // }
 }
 // end of async section
 //
