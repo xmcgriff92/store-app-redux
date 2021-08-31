@@ -1,6 +1,7 @@
 .image-one, .image-two, .image-three, 
 .image-four, .image-five, .image-six, .image-seven,
- .image-eight{
+ .image-eight, .image-nine, .image-ten, .image-eleven,
+  .image-twelve {
     height: 325px;
     width: 200px;
     margin-bottom: 10px;
@@ -11,7 +12,8 @@
 
 .header-one, .header-two, .header-three, 
 .header-four, .header-five, .header-six, 
-.header-seven, .header-eight {
+.header-seven, .header-eight, .header-nine, .header-ten,
+.header-eleven, .header-twelve {
     font-size: 10px;
 }
 
