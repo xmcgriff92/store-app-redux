@@ -5,5 +5,10 @@
 }
 
 h2 {
-    margin-top: 25px;
+    margin-top: 30px;
+}
+
+.container {
+    display: grid;
+    grid-row-gap: 5px;
 }
