@@ -4,6 +4,11 @@
     width: 200px;
 }
 
+.header-one, .header-two, .header-three, 
+.header-four, .header-five, .header-six {
+    font-size: 10px;
+}
+
 h2 {
     margin-top: 30px;
 }
