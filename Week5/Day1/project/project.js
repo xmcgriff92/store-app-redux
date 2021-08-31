@@ -40,11 +40,16 @@ document.body.append(contentContainer);
 //
 const buttonSearch =document.querySelector(".search-button");
 //
+
+//apiKey = "AIzaSyBGCmWpl78T_DZ5EkjPRwhWyEqR7SAww58"
+
 // creating function for user input and button functionapity. creating async function for api and other components
-function getBooksPlease(){
+async function getBooksPlease(){
     const userInput =document.querySelector(".entry").value;
-    console.log(userInput)
-   // const fetchBooks = await fetch("https://openlibrary.org/developers/api");
+    apiUrl = `https://www.googleapis.com/books/v1/volumes?q=${userInput}`;
+    const fetchBooks = await fetch(`${apiUrl}`);
+    const jsonBooks = await fetchBooks.json();
+    console.log(jsonBooks)
     //console.log(fetchBooks)
 }
 
