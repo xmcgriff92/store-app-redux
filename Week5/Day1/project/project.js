@@ -50,18 +50,19 @@ async function getBooksPlease(){
     const fetchBooks = await fetch(`${apiUrl}`);
     const jsonBooks = await fetchBooks.json();
     contentContainer.innerHTML= "";
-    console.log(jsonBooks)
+    //console.log(jsonBooks)
     
 
-    //for (const book of jsonBooks.items) {
-     //   const bookTitle =document.createElement("h2");
-     //   const bookImage =document.createElement("img");
-     //   bookTitle.innerText = book.volumeInfo.title
-    //    bookImage.src = book.volumeInfo.thumbnail
-    //    contentContainer.append(bookImage,bookTitle)
-    //    console.log(bookTitle)
+    for (const book of jsonBooks.items) {
+        const bookTitle =document.createElement("h2");
+        const bookImage =document.createElement("img");
+        const bookAuthor =document.createElement("h4");
+        bookAuthor.innerHTML = book.volumeInfo.authors[0]
+        bookTitle.innerText = book.volumeInfo.title
+        bookImage.src = book.volumeInfo.imageLinks.thumbnail
+        contentContainer.append(bookImage,bookTitle, bookAuthor)
         
-  //  }
+    }
 }
 
 buttonSearch.addEventListener("click", () => getBooksPlease())
