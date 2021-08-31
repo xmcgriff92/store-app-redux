@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="explore.css">
     <title>The Basic Library</title>
 </head>
 <body>
@@ -28,45 +29,41 @@
 
       <h2 class="new-titles">New Titles</h2>
 
-      <!-- carousel of images -->
+      <!-- grid of book coveers -->
 
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <div class="container">
+        <div class="row row-cols-4">
+            <!-- book image one-->
+          <div class="col">
+            <img src="https://www.thebookseller.com/sites/default/files/The%20Institute%20HB%20jacket.jpg" class="image-one" alt="">
+          </div>
+
+          <!-- book image two-->
+          <div class="col">
+            <img src="https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2014/7/30/1406719784584/a3673b4b-74cd-4544-8eba-bd0b51fbee5f-1360x2040.jpeg?width=700&quality=85&auto=format&fit=max&s=f872e3d83c535f8659a964c8328fa977" class="image-two" alt="">
+          </div>
+
+          <!-- book image three -->
+          <div class="col">
+              <img src="" alt="">
+          </div>
+
+          <!-- book image four-->
+          <div class="col">
+              <img src="" alt="">
+          </div>
+
+          <!-- book image five -->
+          <div class="col">
+            <img src="" alt="">
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="https://juliaquinn.com/images/covers/viscount/viscount-2015_350.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>The Viscount Who Loved Me</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="https://www.thebookseller.com/sites/default/files/The%20Institute%20HB%20jacket.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>The Institute</h5>
-              <p>Stephen King</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the third slide.</p>
-            </div>
-          </div>
+
+        <!-- book image six -->
+        <div class="col">
+            <img src="" alt="">
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+
+        </div>
       </div>
 
     <!-- end of carousel-->
