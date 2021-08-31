@@ -1,5 +1,6 @@
 .image-one, .image-two, .image-three, 
-.image-four, .image-five, .image-six {
+.image-four, .image-five, .image-six, .image-seven,
+ .image-eight{
     height: 325px;
     width: 200px;
     border: 2px solid black;
@@ -8,15 +9,23 @@
 }
 
 .header-one, .header-two, .header-three, 
-.header-four, .header-five, .header-six {
+.header-four, .header-five, .header-six, 
+.header-seven, .header-eight {
     font-size: 10px;
 }
 
 h2 {
-    margin-top: 30px;
+    margin-top: px;
+    padding: 15px;
+    background-color: blueviolet;
+    text-align: center;
 }
 
 .container {
     display: grid;
     grid-row-gap: 5px;
+}
+
+.secondary-header {
+    margin-top: 15px;
 }
