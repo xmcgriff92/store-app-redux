@@ -24,6 +24,14 @@ body {
 }
 
 h1 {
+    font-size: 70px;
     color: white;
     text-align: center;
+    text-shadow: 8px 8px 8px black;
+}
+
+p {
+    font-size: 45px;
+    text-shadow: 8px 8px 8px black;
+    
 }
