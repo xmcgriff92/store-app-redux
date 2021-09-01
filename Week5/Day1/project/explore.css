@@ -2,7 +2,8 @@
 .image-four, .image-five, .image-six, .image-seven,
  .image-eight, .image-nine, .image-ten, .image-eleven,
   .image-twelve, .image-thirteen, .image-fourteen,
-  .image-fifteen, .image-sixteen {
+  .image-fifteen, .image-sixteen, .image-seventeen, 
+  .image-eighteen, .image-nineteen, .image-twenty{
     height: 325px;
     width: 200px;
     margin-bottom: 10px;
@@ -15,7 +16,9 @@
 .header-four, .header-five, .header-six, 
 .header-seven, .header-eight, .header-nine, .header-ten,
 .header-eleven, .header-twelve, .header-thirteen,
-.header-fourteen, .header-fifteen, .header-sixteen {
+.header-fourteen, .header-fifteen, .header-sixteen, 
+.header-seventeen, .header-eighteen, .header-nineteen, 
+.header-twenty {
     font-size: 10px;
 }
 
