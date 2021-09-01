@@ -22,7 +22,7 @@
     background-color: rgb(88, 86, 90);
     color: white;
     text-align: center;
-    box-shadow: 3px 3px 3px black;
+    border-bottom: 1px solid black;
 }
 
 img {
@@ -30,6 +30,10 @@ img {
     width: 150px;
     border: 2px solid black;
 
+}
+
+h1 {
+    font-size: 20px;
 }
 
  h2 {
