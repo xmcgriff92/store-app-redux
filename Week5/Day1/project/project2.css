@@ -24,6 +24,23 @@
     border-bottom: 1px solid black;
 }
 
+button {
+    color: white;
+    border-top: 2px solid grey;
+    border-right: 2px solid grey;
+    border-bottom: 2px solid grey;
+    border-left: none;
+   
+}
+
+input {
+    border-top: 2px solid grey;
+    border-right: none;
+    padding: 1px;
+    width: 245px;
+    
+}
+
 img {
     height: 250px;
     width: 150px;
@@ -51,6 +68,10 @@ h3 {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
+    }
+
+    h3 {
+        font-size: 20px;
     }
 
     img {
