@@ -42,8 +42,6 @@ document.body.append(contentContainer);
 const buttonSearch =document.querySelector(".search-button");
 //
 
-//apiKey = "AIzaSyBGCmWpl78T_DZ5EkjPRwhWyEqR7SAww58"
-
 // creating function for user input and button functionapity. creating async function for api and other components
 async function getBooksPlease(){
     const userInput =document.querySelector(".entry").value;
@@ -53,7 +51,6 @@ async function getBooksPlease(){
     contentContainer.innerHTML= "";
     //console.log(jsonBooks)
     
-
     for (const book of jsonBooks.items) {
         const bookTitle =document.createElement("h6");
         const bookImage =document.createElement("img");
