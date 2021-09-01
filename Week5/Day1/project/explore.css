@@ -38,6 +38,6 @@ h2 {
     margin-top: 15px;
 }
 
-.child-header {
-    color: ;
+.child-header, .new-titles {
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
 }
