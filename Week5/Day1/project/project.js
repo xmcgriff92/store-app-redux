@@ -36,7 +36,7 @@ document.body.append(secondHeader);
 //
 // creating container to display books found from search
 const contentContainer =document.createElement("div");
-contentContainer.className = "content.container";
+contentContainer.className = "content-container";
 document.body.append(contentContainer);
 //
 const buttonSearch =document.querySelector(".search-button");
@@ -55,13 +55,13 @@ async function getBooksPlease(){
     
 
     for (const book of jsonBooks.items) {
-        const bookTitle =document.createElement("h2");
+        const bookTitle =document.createElement("h6");
         const bookImage =document.createElement("img");
-        const bookAuthor =document.createElement("h4");
+        const bookAuthor =document.createElement("h6");
         bookAuthor.innerHTML = book.volumeInfo.authors[0]
         bookTitle.innerText = book.volumeInfo.title
         bookImage.src = book.volumeInfo.imageLinks.thumbnail
-        contentContainer.append(bookImage,bookTitle, bookAuthor)
+        contentContainer.append(bookImage, bookTitle, bookAuthor)
         
     }
 }
