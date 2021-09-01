@@ -52,9 +52,9 @@ async function getBooksPlease(){
     //console.log(jsonBooks)
     
     for (const book of jsonBooks.items) {
-        const bookTitle =document.createElement("h6");
+        const bookTitle =document.createElement("h3");
         const bookImage =document.createElement("img");
-        const bookAuthor =document.createElement("h6");
+        const bookAuthor =document.createElement("h3");
         bookAuthor.innerHTML = book.volumeInfo.authors[0]
         bookTitle.innerText = book.volumeInfo.title
         bookImage.src = book.volumeInfo.imageLinks.thumbnail
