@@ -7,17 +7,33 @@
     border-bottom: 1px solid black;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+.main-container {
+    text-align: center;
 }
 
-.fancy-image {
-    margin-top: 35px;
-    height: 750px;
-    width: 600px;
-    margin-left: 75px;
+
+.banner {
+    background-image: url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    height: 500px;
+    display: flex;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px 10px;
+}
+
+.div1, .div2, .div3 {
+    background-color: tomato;
+}
+
+.div4, .div5, .div6 {
+    background-color: violet;
 }
 
 h1 {
