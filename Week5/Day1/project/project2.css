@@ -4,12 +4,13 @@
 }
 
 .content-container {
+    color: white;
     margin-top: 30px;
     display: grid;
+    place-items: center;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    background-image: linear-gradient(45deg, white, grey);
-   
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
 }
 
 .second-container {
@@ -18,10 +19,14 @@
 
 .main-header {
     padding: 15px;
-    background-image: linear-gradient(45deg, white, grey);
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
     color: white;
     text-align: center;
     border-bottom: 1px solid black;
+}
+
+.search-button {
+    background-image: linear-gradient(45deg, #f3ec78, #af4261)
 }
 
 button {
@@ -30,6 +35,8 @@ button {
     border-right: 2px solid grey;
     border-bottom: 2px solid grey;
     border-left: none;
+    font-size: 15px;
+
    
 }
 
@@ -38,15 +45,17 @@ input {
     border-right: none;
     padding: 1px;
     width: 245px;
+    font-size: 15px;
     
 }
 
 img {
-    height: 250px;
-    width: 150px;
-    border: 2px solid black;
+    height: 300px;
+    width: 200px;
+    border: 3px solid black;
     margin: 25px;
     border-radius: 4px;
+    box-shadow: 7px 7px 7px black;
 
 }
 
@@ -61,20 +70,53 @@ h1 {
 
 h3 {
     margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
 }
 
-@media (max-width: 768px) {
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    place-items: center;
+}
+
+@media (max-width: 933px) {
+    .content-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+
+    .book-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 688px) {
     .content-container {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
     }
 
-    h3 {
-        font-size: 20px;
+    .book-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
     }
 
-    img {
-       margin-left: 175px;
+    h3 {
+        font-size: 20px;
     }
 }

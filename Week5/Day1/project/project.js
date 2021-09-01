@@ -17,7 +17,7 @@ document.body.append(mainContainer);
 const inputField =document.createElement("input");
 mainContainer.appendChild(inputField);
 inputField.className = "entry";
-inputField.placeholder = "enter book here";
+inputField.placeholder = "enter book, author, phrase, etc.";
 inputField.type = "text";
 //
 // creating button field with class
@@ -52,13 +52,16 @@ async function getBooksPlease(){
     //console.log(jsonBooks)
     
     for (const book of jsonBooks.items) {
+        const bookcontainer =document.createElement("div");
+        bookcontainer.className = "book-card"
         const bookTitle =document.createElement("h3");
         const bookImage =document.createElement("img");
         const bookAuthor =document.createElement("h3");
         bookAuthor.innerHTML = book.volumeInfo.authors[0]
         bookTitle.innerText = book.volumeInfo.title
         bookImage.src = book.volumeInfo.imageLinks.thumbnail
-        contentContainer.append(bookImage, bookTitle, bookAuthor)
+        bookcontainer.append(bookImage, bookTitle, bookAuthor)
+        contentContainer.append(bookcontainer)
         
     }
 }
