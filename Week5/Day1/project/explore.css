@@ -22,6 +22,20 @@
     font-size: 10px;
 }
 
+.image-one, .image-two, .image-three, 
+.image-four, .image-five, .image-six, .image-seven,
+ .image-eight {
+     transition: 1.3s;
+ }
+
+
+.image-one:hover, .image-two:hover, .image-three:hover, 
+.image-four:hover, .image-five:hover, .image-six:hover, .image-seven:hover,
+ .image-eight:hover {
+     transform: scale(1.35);
+     z-index: 2;
+ }
+
 
 h2 {
     font-size: 20px;
