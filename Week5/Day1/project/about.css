@@ -79,6 +79,12 @@ h1 {
     margin-top: 30px;
 }
 
+footer {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
 @media (max-width: 730px) {
     .div1, .div2, .div3, 
     .div4, .div5, .div6 {
@@ -93,10 +99,4 @@ h1 {
         flex-wrap: wrap;
     }
 
-}
-
-footer {
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
 }
