@@ -52,6 +52,13 @@ h2 {
     border-bottom: 1px solid black;
 }
 
+
+footer {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
 .container {
     margin-top: 15px;
 }

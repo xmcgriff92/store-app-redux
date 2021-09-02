@@ -41,7 +41,11 @@ document.body.append(contentContainer);
 //
 const buttonSearch =document.querySelector(".search-button");
 //
-
+// creating footer section for the search page
+const footer =document.createElement("footer")
+footer.innerHTML = "copyright &copy; thebasiclibrary.org"
+footer.className = "footer"
+document.body.append(footer)
 // creating function for user input and button functionapity. creating async function for api and other components
 async function getBooksPlease(){
     const userInput =document.querySelector(".entry").value;
