@@ -45,6 +45,7 @@ body {
 
 h1 {
     font-size: 70px;
+    font-family: fantasy;
     color: white;
     text-align: center;
     text-shadow: 8px 8px 8px black;
@@ -52,6 +53,7 @@ h1 {
 
 p {
     font-size: 45px;
+    font-family:fantasy;
     text-shadow: 8px 8px 8px black;
     
 }
