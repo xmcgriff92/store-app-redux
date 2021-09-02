@@ -46,6 +46,10 @@ const footer =document.createElement("footer")
 footer.innerHTML = "copyright &copy; thebasiclibrary.org"
 footer.className = "footer"
 document.body.append(footer)
+//
+// end of footer section!
+
+
 // creating function for user input and button functionapity. creating async function for api and other components
 async function getBooksPlease(){
     const userInput =document.querySelector(".entry").value;
