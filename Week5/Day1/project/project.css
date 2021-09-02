@@ -1,3 +1,9 @@
+.navbar-brand {
+    font-family: fantasy;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
 body {
     margin: 0;
 }
