@@ -1,3 +1,9 @@
+.navbar-brand {
+    font-family: fantasy;
+    font-size: 30px;
+    font-weight: 800;
+}
+
 .image-one, .image-two, .image-three, 
 .image-four, .image-five, .image-six, .image-seven,
  .image-eight, .image-nine, .image-ten, .image-eleven,
@@ -72,8 +78,8 @@ h2 {
         grid-template-columns: repeat(3, 1fr);
        
     }
-    
 }
+
 
 @media (max-width: 995px) {
     .grid , .grid-two, .grid-three, .grid-four {
@@ -82,6 +88,13 @@ h2 {
         padding: 20px;
     }
 
+}
+
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        text-align: center;
+    }
 }
 
 @media (max-width: 536px) {
