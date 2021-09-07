@@ -40,8 +40,8 @@ app.get('/greet/Han', (req, res) => {
     res.send('hello, Han!');
 });
 
-app.get('/', (req, res) => {
-    res.send('hello world');
+app.get('/greet/Tiana', (req, res) => {
+    res.send('<h1>Hello, Tiana!</h1>');
 });
 
 
