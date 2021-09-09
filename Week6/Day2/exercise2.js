@@ -25,17 +25,31 @@ const cities = [
 const es6Renderer = require("express-es6-template-engine");
 
 
-   app.engine("html", es6Renderer);
+app.engine("html", es6Renderer);
 app.set("views", "templates");
 app.set("view engine", "html");
 
 app.get('/', (req,res) => {
     res.render("one", {
         locals: {
-            characters: characters
+            cities: cities
         },
     });
 });
+
+//
+////
+
+/* app.get("/", (req,res) => {    
+    res.status(400).send("This is an invalid route")});
+*/
+
+// const myInfo = {name: "Xavier", city: "Houston", state: "Texas"}
+
+/* app.get('/information', (req,res) => {
+    res.send(myInfo);
+}) */
+
 
 
 
