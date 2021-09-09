@@ -1,4 +1,4 @@
-const PORT = 1992;
+const PORT = 3003;
 const express = require("express");
 const app = express();
 
@@ -22,7 +22,7 @@ const app = express();
    ]; */
 
 
-const es6Renderer = require("express-es6-template-engine");
+// const es6Renderer = require("express-es6-template-engine");
 
 
 /* app.engine("html", es6Renderer);
@@ -60,6 +60,8 @@ const movies = {
     movieName: "The 40 year old virgin", poster: "https://m.media-amazon.com/images/I/51F1M8eR+mL._AC_.jpg"
 
 }
+
+const es6Renderer = require("express-es6-template-engine");
 
 app.engine("html", es6Renderer);
 app.set("views", "templates");

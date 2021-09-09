@@ -10,9 +10,8 @@
 <body>
 
     <h1>Xavier's Movies</h1>
-
-    <div class="movies"> 
-        ${movies.map(movie =>` <h2>${movie.movieName}</h2> <img class="movie-poster" src=${movie.poster}> `).join('')}
+     <div class="movie-content">
+         ${movies.map(movie => `<h2>${movie.movieName}</h2> <img class="movie-poster" src=${movie.poster}>`).join("")}
     </div>
     
 </body>
