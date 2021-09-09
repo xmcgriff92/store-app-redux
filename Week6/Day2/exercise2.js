@@ -22,7 +22,7 @@ const cities = [
    ];
 
 
-   const es6Renderer = require("express-es6-template-engine");
+const es6Renderer = require("express-es6-template-engine");
 
 
    app.engine("html", es6Renderer);
