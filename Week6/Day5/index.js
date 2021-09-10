@@ -13,10 +13,7 @@ const PORT = 3001;
 // middleware
 app.use(express.json());
 // end of middleware
-
-
-// Template
-// const es6Renderer = require("express-es6-template-engine");
+////
 
 // Send stock information
 app.post("/sendStocks", async (req,res) => {
