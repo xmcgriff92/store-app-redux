@@ -1,3 +1,5 @@
+//
+//// env setup
 require("dotenv").config();
 const token = process.env.API_TOKEN;
 const URL = process.env.URL;
@@ -5,7 +7,7 @@ const { createClient } = require('@supabase/supabase-js');
 const supabase = createClient(URL, token);
 // console.log(token)
 ///
-/// server
+/// server setup
 const express = require("express");
 const app = express();
 const PORT = 3001;
