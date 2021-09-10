@@ -63,7 +63,7 @@ const id = req.params.stocksId
 const { data, error } = await supabase
   .from("stockPicks")
   .update(req.body)
-  .match({ id: id })
+  .match({ id : id })
   res.send(console.log(data))
 
 })
