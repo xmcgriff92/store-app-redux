@@ -1,13 +1,34 @@
 const Sequelize = require('sequelize');
 const { toDo } = require('./models');
 const express = require("express");
+const cors = require("cors");
 const app = express();
 const PORT = 3011;
 
 // middleware
 app.use(express.json());
+//
+app.use(cors())
 //// end of middleware
 
+// res render
+const es6Renderer = require("express-es6-template-engine")
+app.engine("html", es6Renderer);
+app.set("views", "template");
+app.set("view engine", "html");
+
+app.get('/', (req,res) => {
+    res.render("toDo", {
+        locals: {
+        
+        
+
+        },
+    });
+}); 
+////
+
+// send item to database
 app.post('/item', async (req, res) => {
     // req.body contains an Object with toDoItem
     console.log(req.body)
