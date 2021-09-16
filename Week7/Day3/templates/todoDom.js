@@ -102,12 +102,12 @@ const itemList = await fetch(URL, {
     console.log(itemList)
     ////
 
-    
+    const contentContainer = document.querySelector(".other-container");
+    contentContainer.innerHTML = "";
     const jsonInfo = await itemList.json()
         for (item of jsonInfo){
             const getItem = item.toDoItem;
             const id = item.id;
-            const contentContainer = document.querySelector(".other-container");
             const idNumber = document.createElement("p");
             const itemShow = document.createElement("p");
             idNumber.innerHTML = id;
