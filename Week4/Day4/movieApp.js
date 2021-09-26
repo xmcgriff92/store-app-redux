@@ -2,7 +2,7 @@
 
 // header for the movie application
 const header =document.createElement("h1")
-header.innerHTML= "The Movie Searcher:"
+header.innerHTML= "The Movie Searcher"
 document.body.append(header)
 // end of header section
 
@@ -49,15 +49,18 @@ async function getMovies (){
     contentContainer.innerHTML = "";
     console.log(jsonMovies)
    
-    //for (const movie of jsonMovies.Search) {
-     //   const movieTitle =document.createElement("h2")
-      //  const movieImage =document.createElement("img");
-      //  movieTitle.innerText = movie.Title
-     //   contentContainer.append(movieTitle, movieImage)
-      //  movieImage.src = movie.Poster;
-   // }
+    for (const movie of jsonMovies.Search) {
+      const movieCard =document.createElement("div");
+      movieCard.className = "movie-card";
+      const movieTitle =document.createElement("h2");
+      const movieImage =document.createElement("img");
+      movieTitle.innerText = movie.Title
+      movieImage.src = movie.Poster;
+      movieCard.append(movieTitle, movieImage)
+      contentContainer.append(movieCard)
+   }
 }
 // end of async section
-//
+
 
 buttonSearch.addEventListener("click", () => getMovies())

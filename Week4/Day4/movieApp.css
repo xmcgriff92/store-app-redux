@@ -3,37 +3,41 @@ body {
 }
 
 h1 {
+    background-image: url(https://lh3.googleusercontent.com/proxy/-f2X1NC4C9dSjVqgKKyoGIKIe76E5OCRw4c4uAdfGhNPCyQw-RAFbSgxUicZ5UjT71FJbUmDoDk_J2B9JNzIZEbzBhGQ-0U);
     text-align: center;
-    color: red;
-    text-shadow: 1px 1px 1px white;
+    color: white;
+    text-shadow: 9px 9px 9px black;
     font-size: 45px;
+    padding: 15px;
 }
 
 h2 {
     color: white;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 5px 5px 5px black;
 }
 
 img {
-    border: 4px solid white;
+    border: 2px solid white;
     border-radius: 2px;
     box-shadow: 10px 10px 10px black;
+    margin-bottom: 15px;
 }
 
 input {
     margin: 1px;
     padding: 3px;
     background-color: white;
-    width: 250px;
+    width: 345px;
     border-radius: 4px;
 }
 
 button {
     text-align: center;
     width: 85px;
-    background-color: red;
+    margin-left: 5px;
+    background-color: rgb(122, 11, 11);
     color: white;
-    border: 2px solid red;
+    border: 2px solid rgb(161, 20, 20);
     border-radius: 4px;
 }
 
@@ -43,10 +47,17 @@ button {
 }
 
 .other-container {
-    margin: 30px;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    text-align: center;
+    background-image: linear-gradient(45deg, red, black);
+    
+    /* margin: 10px;
     padding: 5px;
     text-align: center;
     background-color: rgba(241, 41, 41, 0.514);
     border: 3px solid rgb(255, 255, 255);
-    border-radius: 4px;
+    border-radius: 4px; */
 }
