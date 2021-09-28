@@ -17,6 +17,8 @@
     padding: 10px;
     background-color: rgb(233, 204, 204);
     border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px rgb(26, 25, 25);
 }
 
 .price {
