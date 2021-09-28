@@ -7,8 +7,20 @@
 
 .cards {
     margin: 15px;
+    padding: 15px;
     text-align: center;
-    background-color: burlywood;
+    background-image: linear-gradient(45deg, white, rgb(202, 196, 114));
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.image {
+    height: 115px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 50px;
 }
 
 @media (max-width: 995px) {
@@ -33,5 +45,11 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr); 
         text-align: center;
+    }
+
+    .cards {
+        width: 250px;
+        text-align: center;
+        height: 325px;
     }
 } 

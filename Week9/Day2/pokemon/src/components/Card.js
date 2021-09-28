@@ -6,11 +6,11 @@ class Card extends Component {
         const { id, name, hp, sprites } = this.props.data;
         return (
             <div className={"cards"}>
-                <h1>Cards</h1>
+                
+                <h1>{name}</h1>
                 <p>{id}</p>
-                <img src={sprites.front}/>
-                <p>{name}</p>
-                <p>{hp}</p>
+                <img className={"image"} src={sprites.front}/>
+                <h3>HP: {hp}</h3>
                 <button>Flip</button>
             </div>
         )
