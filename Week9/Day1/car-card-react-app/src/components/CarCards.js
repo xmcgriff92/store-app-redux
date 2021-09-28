@@ -19,6 +19,7 @@ export default class CarCards extends Component {
     ],
     transmission: "7 speed dual clutch",
     topSpeed: [{ US: "261", Metric: "420" }],
+    
     img : true,
     blah: "https://uncrate.com/p/2021/06/bugatti-la-voiture-noire-1.jpg"
   };
