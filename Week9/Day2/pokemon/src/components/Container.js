@@ -6,6 +6,8 @@ class Container extends Component {
 
     state = {
 
+        flipped: true,
+
          data: [
             {
               pokemon: [
@@ -222,7 +224,7 @@ class Container extends Component {
         console.log(pokeItems)
         return (
             <div className={"container"}>
-                {pokeItems.map(data => (<Card data={data}/>))}
+                {pokeItems.map(data => (<Card data={data} flipped={this.state.flipped}/>))}
             
             </div>
         )

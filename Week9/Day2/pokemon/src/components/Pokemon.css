@@ -9,8 +9,8 @@
     margin: 15px;
     padding: 15px;
     text-align: center;
-    background-image: linear-gradient(45deg, white, rgb(202, 196, 114));
-    border: 2px solid black;
+    background-image: linear-gradient(45deg, white, rgb(241, 230, 72));
+    border: 3px solid black;
     border-radius: 5px;
 }
 
@@ -21,6 +21,21 @@
     border: 2px solid white;
     box-shadow: 5px 5px 5px black;
     border-radius: 50px;
+}
+
+.name {
+    color: white;
+  text-shadow: 1px 1px 1px black;
+}
+
+.button {
+    width: 150px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px rgb(34, 33, 33);
 }
 
 @media (max-width: 995px) {
@@ -50,6 +65,6 @@
     .cards {
         width: 250px;
         text-align: center;
-        height: 325px;
+        height: 350px;
     }
 } 
