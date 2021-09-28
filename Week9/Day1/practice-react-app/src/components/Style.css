@@ -1,8 +1,14 @@
 .div-one {
+    border: 2px solid black;
     text-align: center;
+    background-color: rgb(66, 100, 66);
+    width: 400px;
+    height: 550px;
+    padding: 20px;
 }
 
 .image {
     height: 250px;
     width: 350px;
+    border: 2px solid black;
 }
