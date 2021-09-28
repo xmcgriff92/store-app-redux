@@ -3,7 +3,6 @@
     text-align: center;
     background-color: rgb(66, 100, 66);
     width: 400px;
-    height: 550px;
     padding: 20px;
 }
 
@@ -11,4 +10,15 @@
     height: 250px;
     width: 350px;
     border: 2px solid black;
+}
+
+.button {
+    width: 275px;
+    padding: 10px;
+    background-color: rgb(233, 204, 204);
+    border: 2px solid black;
+}
+
+.price {
+    font-size: 45px;
 }

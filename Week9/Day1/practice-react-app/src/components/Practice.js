@@ -38,7 +38,7 @@ export default class Practice extends Component {
                 <h2>{this.state.model}</h2>
                 <h5>{this.state.engine}</h5>
                 <h5>{this.state.horsepower}</h5>
-                <h1>{this.state.price}</h1>
+                <h1 className={"price"}>{this.state.price}</h1>
                 <button className={"button"} onClick={this.changePicture}>Change Picture</button>
                 
             </div>
