@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import Card from './Card';
+import "./Pokemon.css";
 
-export default class Container extends Component {
+class Container extends Component {
 
     state = {
 
@@ -220,7 +221,7 @@ export default class Container extends Component {
         const pokeItems = this.state.data[0].pokemon
         console.log(pokeItems)
         return (
-            <div>
+            <div className={"container"}>
                 <h1>Card Container</h1>
                 {pokeItems.map(data => (<Card data={data}/>))}
             
@@ -228,3 +229,5 @@ export default class Container extends Component {
         )
     }
 }
+
+export default Container;
