@@ -11,6 +11,7 @@ class Card extends Component {
                 <img src={sprites.front}/>
                 <p>{name}</p>
                 <p>{hp}</p>
+                <button>Flip</button>
             </div>
         )
     }

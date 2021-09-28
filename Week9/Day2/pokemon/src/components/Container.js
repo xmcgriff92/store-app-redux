@@ -222,7 +222,6 @@ class Container extends Component {
         console.log(pokeItems)
         return (
             <div className={"container"}>
-                <h1>Card Container</h1>
                 {pokeItems.map(data => (<Card data={data}/>))}
             
             </div>
