@@ -217,20 +217,12 @@ export default class Container extends Component {
   
     
     render() {
-
-        // console.log(this.state.data[0])
-        const name = this.state.data[0].pokemon[0].name
-        const front = this.state.data[0].pokemon[0].sprites.front
-        const back = this.state.data[0].pokemon[0].sprites.back
-
-
-        console.log(name)
-        console.log(front)
-        console.log(back)
-
+        const pokeItems = this.state.data[0].pokemon
+        console.log(pokeItems)
         return (
             <div>
-               <Card/> 
+                <h1>Card Container</h1>
+               <Card /> 
             </div>
         )
     }
