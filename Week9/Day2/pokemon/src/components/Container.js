@@ -222,7 +222,8 @@ export default class Container extends Component {
         return (
             <div>
                 <h1>Card Container</h1>
-               <Card /> 
+                {pokeItems.map(data => (<Card data={data}/>))}
+            
             </div>
         )
     }
