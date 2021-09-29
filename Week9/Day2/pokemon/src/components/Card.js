@@ -7,21 +7,22 @@ class Card extends Component {
         flip: false,
     };
 
-    // function "flipIt" breaks page. Cant figure out why
-    /* flipIt = () => {
+   
+    flipIt = () => {
         this.setState({ flip: !this.state.flip});
     }
-    */
+    
     render() {
         const { name, hp, sprites } = this.props.data;
-        const { flip } = this.props
+        const { flip } = this.state
+        
         return (
             <div className={"cards"}>
                 
                 <h1 className={"name"}>{name}</h1>
                 <img className={"image"} src={flip ? sprites.back : sprites.front}/>
                 <h3>HP: {hp}</h3>
-                <button className={"button"}>Flip</button>
+                <button onClick={this.flipIt} className={"button"}>Flip</button>
             </div>
         )
     }

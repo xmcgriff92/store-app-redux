@@ -222,7 +222,7 @@ class Container extends Component {
         console.log(pokeItems)
         return (
             <div className={"container"}>
-                {pokeItems.map(data => (<Card data={data} flipped={this.state.flipped}/>))}
+                {pokeItems.map(data => (<Card data={data} flip={this.state.flip}/>))}
             
             </div>
         )
