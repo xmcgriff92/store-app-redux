@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+
 // useState is a hook
 //state = {
 // counter: 0
@@ -24,10 +25,11 @@ const [userName, setUserName] = useState("");
 
   return (
     <div className="App">
-      <h1>Form Validation</h1>
+
+     <h1>Form Validation</h1>
 
       <p>User is {userName}</p>
-      <input type="text" placeholder="Type username here"/>
+      <input onChange={(e) => console.log(e.target.value)} type="text" placeholder="Type username here"/>
 
       <div>
         <p>Counter is : {counter}</p>
@@ -39,8 +41,10 @@ const [userName, setUserName] = useState("");
         <input type="text"/>
         <input type="text"/>
         <input type="button" value="send"/>
-      </form>
+      </form> */
+      <Form/>
     </div>
+    
   );
 }
 
