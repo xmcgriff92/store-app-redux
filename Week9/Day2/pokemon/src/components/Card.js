@@ -23,6 +23,7 @@ class Card extends Component {
                 <img className={"image"} src={flip ? sprites.back : sprites.front}/>
                 <h3>HP: {hp}</h3>
                 <button onClick={this.flipIt} className={"button"}>Flip</button>
+                
             </div>
         )
     }
