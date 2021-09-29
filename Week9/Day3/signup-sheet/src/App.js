@@ -20,7 +20,7 @@ function App() {
     <div className="App">
 
       <Signup firstName ={setfirstName}
-      lastName ={setlastName} dob ={dob}  address ={setaddress}
+      lastName ={setlastName} dob ={setdob}  address ={setaddress}
       city ={setcity} state ={setstate} zipcode={setzipcode}
       username ={setusername} email ={setemail}/>
       <DB />
