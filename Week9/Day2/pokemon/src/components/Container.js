@@ -6,8 +6,6 @@ class Container extends Component {
 
     state = {
 
-        flipped: true,
-
          data: [
             {
               pokemon: [
