@@ -20,13 +20,21 @@ function App() {
 
 // hook
 const [counter, setCounter] = useState(0);
+const [userName, setUserName] = useState("");
 
   return (
     <div className="App">
       <h1>Form Validation</h1>
-      <p>Counter is : {counter}</p>
-      <button onClick={() => setCounter(counter + 1)}>Add</button>
-      <button onClick={() => setCounter(counter - 1)}>Subtract</button>
+
+      <p>User is {userName}</p>
+      <input type="text" placeholder="Type username here"/>
+
+      <div>
+        <p>Counter is : {counter}</p>
+        <button onClick={() => setCounter(counter + 1)}>Add</button>
+        <button onClick={() => setCounter(counter - 1)}>Subtract</button>
+      </div>
+
       <form>
         <input type="text"/>
         <input type="text"/>
