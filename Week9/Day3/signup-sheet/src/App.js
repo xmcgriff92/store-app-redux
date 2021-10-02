@@ -31,7 +31,7 @@ function App() {
         username ={setusername} email ={setemail} />
       </div>
 
-      <div className>
+      <div className="data">
         <DB userInfo={userInfo} />
       </div>
 

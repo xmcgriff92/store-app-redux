@@ -5,18 +5,32 @@ function Signup(props) {
     return(
         <div>
             <h1>Signup Sheet</h1>
-            <div>
+            <div className="grid">
+                <div>
+                    <input onChange={(e) => props.firstName(e.target.value)} type="text" placeholder="first name"/>
+                    <input onChange={(e)=> props.lastName(e.target.value)} type="text" placeholder="last name"/>
+                </div>
 
-                <input onChange={(e) => props.firstName(e.target.value)} type="text" placeholder="first name"/>
-                <input onChange={(e)=> props.lastName(e.target.value)} type="text" placeholder="last name"/>
-                <input onChange={(e)=> props.dob(e.target.value)} type="date" placeholder="date of birth"/>
-                <input onChange={(e)=> props.address(e.target.value)} type="text"  placeholder="Address"/>
-                <input onChange={(e)=> props.city(e.target.value)} type="text"  placeholder="City"/>
-                <input onChange={(e)=> props.state(e.target.value)} type="text"  placeholder="State"/>
-                <input onChange={(e)=> props.zipcode(e.target.value)} type="text"  placeholder="Zipcode"/>
-                <input onChange={(e)=> props.username(e.target.value)} type="text" placeholder="Username"/>
+                <div>
+                    <input onChange={(e)=> props.dob(e.target.value)} type="date" placeholder="date of birth"/>
+                    <input onChange={(e)=> props.address(e.target.value)} type="text"  placeholder="Address"/>
+                </div>
+
+                <div>
+                    <input onChange={(e)=> props.city(e.target.value)} type="text"  placeholder="City"/>
+                    <input onChange={(e)=> props.state(e.target.value)} type="text"  placeholder="State"/>
+                </div>
+
+                <div>
+                    <input onChange={(e)=> props.zipcode(e.target.value)} type="text"  placeholder="Zipcode"/>
+                    <input onChange={(e)=> props.username(e.target.value)} type="text" placeholder="Username"/>
+                </div>
+
+                <div>
                 <input onChange={(e)=> props.email(e.target.value)} type="text"  placeholder="Email"/>
+                </div>
                 <button onClick={() => props.submitButton()}>Signup</button>
+   
 
             </div>
 
