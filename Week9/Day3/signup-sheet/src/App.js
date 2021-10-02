@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Signup from './components/Signup';
 import DB from './components/DB';
+import './components/App.css'
 
 function App() {
 
@@ -13,21 +14,27 @@ function App() {
   const [zipcode, setzipcode] = useState("")
   const [username , setusername ] = useState("")
   const [email , setemail ] = useState("")
-  const [signupForm, setsignupForm] = useState("")
+  const [userInfo, setuserInfo] = useState([])
   
 
- 
+  const submitButton = () => {
+    setuserInfo([...userInfo, firstName + " " + lastName, dob, address, city + " " + state + " " + zipcode, username, email])
+  }
 
   return (
 
-    <div className="App">
+    <div className="App-container">
+      <div className="sign-up">
+        <Signup submitButton={submitButton} firstName ={setfirstName}
+        lastName ={setlastName} dob ={setdob}  address ={setaddress}
+        city ={setcity} state ={setstate} zipcode={setzipcode}
+        username ={setusername} email ={setemail} />
+      </div>
 
-      <Signup firstName ={setfirstName}
-      lastName ={setlastName} dob ={setdob}  address ={setaddress}
-      city ={setcity} state ={setstate} zipcode={setzipcode}
-      username ={setusername} email ={setemail}/>
-      <DB />
-     
+      <div className>
+        <DB userInfo={userInfo} />
+      </div>
+
     </div>
   );
 }
