@@ -6,7 +6,7 @@ function DB (props) {
 
   return (
     <div>
-      <h1>DB</h1>
+      <h1>User Data</h1>
       <ul>
         {userInfo?.map((users) => (
           <li>{users}</li>

@@ -1,6 +1,8 @@
 .data {
-    background-color: purple;
+    background-color: #f2f2f2;
     margin: 20px;
     padding: 5px;
     height: 420px;
+    border-radius: 4px;
+    
 }

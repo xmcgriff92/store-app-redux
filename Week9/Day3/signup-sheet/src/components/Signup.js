@@ -26,8 +26,8 @@ function Signup(props) {
                     <input onChange={(e)=> props.username(e.target.value)} type="text" placeholder="Username"/>
                 </div>
 
-                <div>
-                <input onChange={(e)=> props.email(e.target.value)} type="text"  placeholder="Email"/>
+                <div className="email">
+                    <input onChange={(e)=> props.email(e.target.value)} type="text"  placeholder="Email"/>
                 </div>
                 <button onClick={() => props.submitButton()}>Signup</button>
    
