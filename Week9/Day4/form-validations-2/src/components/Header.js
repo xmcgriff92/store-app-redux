@@ -6,7 +6,7 @@ import { UserButton,
   } from "../components/styled-components/Header-style"
 
 const URL = "https://randomuser.me/api/";
-export default function Header() {
+export default function Header(props) {
   const [user, setUser] = useState({});
   const [counter, setCounter] = useState(0);
   // useEffect is a hook
@@ -40,6 +40,7 @@ export default function Header() {
 
   return (
     <HeaderContainer>
+      <UserButton>View Sidebar</UserButton>
     <HeaderHeader> User Logged In</HeaderHeader>
     <UserPicture src={user?.picture?.large} alt="" />
     <p>
