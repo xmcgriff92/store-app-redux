@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-export default function Account() {
+export default function MuscleCars() {
     return (
         <div>
-            <h1>Account</h1>
+            <h1>Motorcycles</h1>
         </div>
     )
 }
