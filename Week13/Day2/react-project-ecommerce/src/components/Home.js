@@ -1,17 +1,13 @@
 import React, { useState } from 'react';
 import Itemcard from './Itemcard';
 
-export default function Home() {
-    const [cartNumber, setcartNumber] = useState(0);
-
-    const addToCart = () => {
-        setcartNumber(cartNumber + 1);
-    }
-
+const Home = () => {
 
     return (
         <div>
-            <Itemcard addToCart={addToCart} cartNumber={cartNumber}/>
+            <Itemcard />
         </div>
     )
 }
+
+export default Home;
