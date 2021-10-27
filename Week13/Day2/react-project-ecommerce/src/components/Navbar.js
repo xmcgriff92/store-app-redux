@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   Anchor,
   Header2,
@@ -8,8 +8,15 @@ import {
   Overlay,
   UnorderedList,
 } from "./Website.Style";
+import { connect } from "react-redux";
+import { getNumbers } from "../actions/GetAction";
 
-export default function Navbar() {
+const Navbar = (props) => {
+    
+useEffect(() => {
+    getNumbers();
+}, [])
+
   return (
     <div>
       <NavHeader>
@@ -24,7 +31,7 @@ export default function Navbar() {
               <Anchor href="#">About</Anchor>
             </ListItems>
             <ListItems>
-              <Anchor href="#">Cart<span> 0</span></Anchor>
+              <Anchor href="#">Cart<span> ({props.cartProps.cartNumbers})</span></Anchor>
             </ListItems>
           </UnorderedList>
         </Navigation>
@@ -32,3 +39,9 @@ export default function Navbar() {
     </div>
   );
 }
+
+const mapStateProps = state => ({
+    cartProps: state.cartState
+})
+
+export default connect(mapStateProps, { getNumbers }) (Navbar);

@@ -49,6 +49,14 @@ padding-right: 10px;
 padding-left: 10px;
 `;
 
+export const Button = styled.button`
+padding: 5px;
+transition: all 0.3s ease-in-out;
+background-color: darkgrey;
+cursor: pointer;
+text-decoration: none;
+`;
+
 export const Anchor = styled.a`
 padding: 5px;
 transition: all 0.3s ease-in-out;
