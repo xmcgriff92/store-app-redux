@@ -9,7 +9,7 @@ import {
 
 export default function Search() {
 const clickButton = () => {
-    console.log("you lcicked me!")
+    console.log("you clicked me!")
 }
 
   return (
@@ -17,7 +17,7 @@ const clickButton = () => {
       <Container>
           <h6>Search</h6>
         <SearchBar type="text" placeholder="Search Movie Here" />
-        <SearchButton>Search</SearchButton>
+        <SearchButton onClick={() => clickButton()}>Search</SearchButton>
       </Container>
     </SearchContainer>
   );
