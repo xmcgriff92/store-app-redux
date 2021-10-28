@@ -17,14 +17,14 @@ const initialData = {
         price: "1499"
     },
     {
-        name: "Samsung Galaxy S21",
+        name: "Samsung Galaxy S21 - Black",
         image: "https://ss7.vzw.com/is/image/VerizonWireless/samsung-flagship-smartphone-palette-p3-black-128gb-smg998uzkv?$acc-lg$&hei=350&wid=350",
         price: "1299"
     },
     {
-        name: "",
-        image: "",
-        price: ""
+        name: "iPhone 13 Pro Max - Gold",
+        image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443210_sd.jpg;maxHeight=640;maxWidth=550",
+        price: "999"
     },
     {
         name: "",
