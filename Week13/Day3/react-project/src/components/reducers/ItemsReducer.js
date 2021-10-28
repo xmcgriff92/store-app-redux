@@ -35,5 +35,7 @@ const initialData = {
 }
 
 const itemReducer = (state = initialData, action) => {
-
+    return state
 }
+
+export default itemReducer;
