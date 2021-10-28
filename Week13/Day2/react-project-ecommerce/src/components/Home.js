@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import Itemcard from './Itemcard';
 
 const Home = () => {

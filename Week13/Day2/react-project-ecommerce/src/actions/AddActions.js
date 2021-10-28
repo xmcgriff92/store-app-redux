@@ -1,10 +1,12 @@
 import { ADD_ITEM_CART } from "./Types";
 
-export const addCart = () => {
+export const addCart = (itemName) => {
     return (dispatch) => {
-        console.log("you clicked");
+        console.log("Adding to cart");
+        console.log("Item: ", itemName);
         dispatch({
-            type: ADD_ITEM_CART
+            type: ADD_ITEM_CART,
+            payload: itemName
         });
     }
 }

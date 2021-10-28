@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import {
-  Anchor,
   Header2,
   ListItems,
   NavHeader,
@@ -8,8 +7,10 @@ import {
   Overlay,
   UnorderedList,
 } from "./Website.Style";
+import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { getNumbers } from "../actions/GetAction";
+
 
 const Navbar = (props) => {
     
@@ -25,13 +26,13 @@ useEffect(() => {
           <Header2>Shop</Header2>
           <UnorderedList>
             <ListItems>
-              <Anchor href="#">Home</Anchor>
+              <Link to="/">Home</Link>
             </ListItems>
             <ListItems>
-              <Anchor href="#">About</Anchor>
+              <Link to="/about">About</Link>
             </ListItems>
             <ListItems>
-              <Anchor href="#">Cart<span> ({props.cartProps.cartNumbers})</span></Anchor>
+              <Link to="/cart">Cart<span> ({props.cartProps.cartNumbers})</span></Link>
             </ListItems>
           </UnorderedList>
         </Navigation>
