@@ -30,5 +30,10 @@ const initialData = {
         name: "Astro A40 TR Headset",
         image: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6443/6443210_sd.jpg;maxHeight=640;maxWidth=550",
         price: "149"
-    }]
+    }
+]
+}
+
+const itemReducer = (state = initialData, action) => {
+
 }
