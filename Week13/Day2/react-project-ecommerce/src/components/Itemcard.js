@@ -2,9 +2,11 @@ import React from "react";
 import { Button, CardImage, CardContainer, Container, Header2, Header3 } from "./Website.Style";
 import { addCart } from "../actions/AddActions";
 import { connect } from "react-redux";
+import { useDispatch } from "react-redux";
 
-const Itemcard = (props) => {
-const addCart = props.addCart;
+const Itemcard = () => {
+
+const dispatch = useDispatch();
 
   return (
     <CardContainer>
@@ -13,7 +15,7 @@ const addCart = props.addCart;
         <CardImage src="https://t-mobile.scene7.com/is/image/Tmusprod/Apple-iPhone-13-Pro-Max-Gold-frontimage" alt="" />
         <Header3>Gold Iphone</Header3>
         <Header2>$1,500</Header2>
-        <Button onClick={() => addCart('goldIPhone')} href="#">Add to Cart</Button>
+        <Button onClick={() => addCart(dispatch,'goldIPhone')} href="#">Add to Cart</Button>
       </Container>
 
       <Container>
