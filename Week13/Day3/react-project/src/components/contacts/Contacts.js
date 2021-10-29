@@ -11,11 +11,17 @@ export const Contacts = (props) => {
       </th>
       <th scope="row">{contact.id}</th>
       <td>
-        <Avatar name={contact.name} size="45" round={true} />
+        <Avatar className="" name={contact.name}
+         size="45" round={true} />
         {contact.name}
       </td>
       <td>{contact.phone}</td>
       <td>{contact.email}</td>
+      <td><a href="#">
+          <span>edit</span></a></td>
+
+          <td><a href="#">
+          <span>delete</span></a></td>
     </tr>
   );
 };
