@@ -6,9 +6,9 @@ export default function Navbar() {
     <div>
       <nav className="navbar shadow fixed-top navbar-expand-sm navbar-dark bg-primary">
         <div className="container">
-          <a class="navbar-brand" href="#">
+          <Link to="/" class="navbar-brand">
             Contacts
-          </a>
+          </Link>
 
           <div>
             <Link to="/addcontact" className="btn btn-light ml-auto">Create Contact</Link>
