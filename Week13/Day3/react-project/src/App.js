@@ -1,21 +1,16 @@
-import Items from "./components/Items";
+import Contacts from "./components/contacts/Contacts";
 import Navbar from "./components/Navbar";
-import AddItems from "./components/AddItems";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Cart from "./components/Cart";
+import store from "./Store";
+import { Provider } from 'react-redux';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <BrowserRouter>
-        <Switch>
-          <Route exact path="/" component={Items} />
-          <Route exact path="/additems" component={AddItems} />
-          <Route exact path="/cart" component={Cart} />
-        </Switch>
-      </BrowserRouter>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Navbar />
+        <Contacts />
+      </div>
+    </Provider>
   );
 }
 
