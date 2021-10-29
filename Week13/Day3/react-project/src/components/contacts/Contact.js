@@ -19,6 +19,7 @@ export default function Contact() {
             <th>Name</th>
             <th>Phone</th>
             <th>Email</th>
+            <th>Edit/Delete</th>
           </tr>
         </thead>
         <tbody>

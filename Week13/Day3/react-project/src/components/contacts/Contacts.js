@@ -10,7 +10,6 @@ export const Contacts = (props) => {
         <div className="custom-control custom-checkbox"></div>
         <input type="checkbox" className="custom-control-input" />
       </th>
-      <th scope="row">{contact.id}</th>
       <td>
         <Avatar className="" name={contact.name}
          size="45" round={true} />
