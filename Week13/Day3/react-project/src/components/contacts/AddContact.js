@@ -13,6 +13,8 @@ export default function AddContact() {
     const createContact = (e) => {
         e.preventDefault();
        const newContact = {
+
+           id: shortid.generate(),
            name: name,
            phone: phone,
            email: email

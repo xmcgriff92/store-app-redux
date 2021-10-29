@@ -4,6 +4,7 @@ import { BsTrashFill, BsPencilFill } from "react-icons/bs";
 
 export const Contacts = (props) => {
   const contact = props.contact;
+  
   return (
     <tr>
       <th scope="col">

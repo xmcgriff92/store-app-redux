@@ -1,0 +1,5 @@
+export const actionTypes = {
+    PLACE_ITEMS: "PLACE_ITEMS",
+    CHOSEN_ITEMS: "CHOSEN_ITEMS",
+    DELETE_CHOSEN_ITEMS: "DELETE_CHOSEN_ITEMS"
+};
