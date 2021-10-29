@@ -3,9 +3,8 @@ import { useSelector } from "react-redux";
 import { ContactsContainer } from "../Website.Style";
 
 export default function Contacts() {
-
-const contacts = useSelector((state) => state.contacts)
-console.log(contacts)
+  const contacts = useSelector((state) => state.contacts);
+  console.log(contacts);
 
   return (
     <ContactsContainer>
@@ -13,8 +12,8 @@ console.log(contacts)
         <thead>
           <tr>
             <th scope="col">
-                <div className="custom-control custom-checkbox"></div>
-                <input type="checkbox" className="custom-control-input"/>
+              <div className="custom-control custom-checkbox"></div>
+              <input type="checkbox" className="custom-control-input" />
             </th>
             <th>Name</th>
             <th>Phone</th>
@@ -22,21 +21,16 @@ console.log(contacts)
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-            {contacts.map((contact)=> {
-              return ( <tr>
-                    <th scope="row">1</th>
-                    <td>{contact.name}</td>
-                    <td>{contact.phone}</td>
-                    <td>{contact.email}</td>
-                </tr> )
-            })}
-
+          {contacts.map((contact) => {
+            return (
+              <tr>
+                <th scope="row">{contact.id}</th>
+                <td>{contact.name}</td>
+                <td>{contact.phone}</td>
+                <td>{contact.email}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </ContactsContainer>
