@@ -1,4 +1,4 @@
-import Contacts from "./components/contacts/Contacts";
+import Contacts from "./components/contacts/Contact";
 import Navbar from "./components/Navbar";
 import store from "./Store";
 import { Provider } from 'react-redux';
