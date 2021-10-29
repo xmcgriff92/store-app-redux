@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { ContactsContainer, FormContainer } from '../Website.Style'
 
 export default function AddContact() {
+    const [name, setName] = useState("");
+    const [phone, setPhone] = useState("");
+    const [email, setEmail] = useState("");
+
     return (
         <ContactsContainer>
            <div className="card border-0 shadow">
@@ -20,6 +24,8 @@ export default function AddContact() {
                         <FormContainer className="form-group">
                             <input className="form-control" type="text" placeholder="enter your email"/>
                         </FormContainer>
+
+                        <button className="btn btn-primary" type="submit">Add Contact</button>
                     </form>
 
                </div>
