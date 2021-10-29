@@ -1,5 +1,6 @@
 import React from "react";
 import Avatar from "react-avatar";
+import { BsTrashFill, BsPencilFill } from "react-icons/bs";
 
 export const Contacts = (props) => {
   const contact = props.contact;
@@ -18,10 +19,12 @@ export const Contacts = (props) => {
       <td>{contact.phone}</td>
       <td>{contact.email}</td>
       <td><a href="#">
-          <span>edit</span></a></td>
-
-          <td><a href="#">
-          <span>delete</span></a></td>
+          <span className=""><BsPencilFill/></span></a>
+          <a href="#">
+          <span><BsTrashFill/></span></a>
+          </td>
+            
+         
     </tr>
   );
 };
