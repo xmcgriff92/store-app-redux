@@ -11,17 +11,17 @@ const initialState = {
         productPrice: "499.99",
     },
     {
-        productName: "Apple iPhone 13 Pro Max - Gold",
+        productName: "iPhone 13 Pro Max - Gold",
         productImage: "https://cdn.tmobile.com/images/png/products/phones/Apple-iPhone-13-Pro-Max-Gold/250x270_3.png",
         productPrice: "999.99",
     },
     {
-        productName: "Apple iPhone 13 Pro Max - Silver",
+        productName: "iPhone 13 Pro Max - Silver",
         productImage: "https://cdn.tmobile.com/images/png/products/phones/Apple-iPhone-13-Pro-Max-Silver/250x270_3.png",
         productPrice: "999.99",
     },
     {
-        productName: "Apple iPhone 13 Pro Max - Graphite",
+        productName: "iPhone 13 Pro Max - Graphite",
         productImage: "https://cdn.tmobile.com/images/png/products/phones/Apple-iPhone-13-Pro-Max-Graphite/250x270_3.png",
         productPrice: "999.99",
     },

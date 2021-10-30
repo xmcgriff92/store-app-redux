@@ -10,6 +10,7 @@ import { createStore } from "redux";
 import rootReducer from "./reducers/RootReducer";
 import { Provider } from "react-redux";
 
+
 function App() {
   const persistConfig = {
     key: "root",
@@ -17,7 +18,8 @@ function App() {
   };
 
   const persistedReducer = persistReducer(persistConfig, rootReducer);
-  const store = createStore(persistedReducer);
+  const store = createStore(persistedReducer,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
   const persistor = persistStore(store);
 
   return (
