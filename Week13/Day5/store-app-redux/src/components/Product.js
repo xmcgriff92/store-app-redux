@@ -5,7 +5,8 @@ export default function Product({product}) {
         <div>
             <h1>{product.productName}</h1>
             <img src={product.productImage} className="img-fluid" alt=""/>
-            <h2>{product.productPrice}</h2>
+            <h5>Price: {product.productPrice}</h5>
+            <button>ADD TO CART</button>
         </div>
     )
 }
