@@ -8,7 +8,7 @@ const productFiller = useSelector(store => store.productsReducer)
 const productsList = productFiller.products;
 const productData = productsList.map((product) => {
 
-    return <div>
+    return <div className="col-md-4">
         <Product product={product}/>
     </div>
     
