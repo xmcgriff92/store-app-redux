@@ -11,15 +11,15 @@ export default function Navbarrr() {
     <div>
       <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">EZ-Electronics</Navbar.Brand>
+          <Navbar.Brand as={Link} to={"/"}>EZ-Electronics</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#features">Home</Nav.Link>
-              <Nav.Link href="#pricing">Add Items</Nav.Link>
+              <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
+              <Nav.Link as={Link} to={"/additem"}>Add Items</Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link eventKey={2} href="#memes">
+              <Nav.Link eventKey={2} as={Link} to={"/basket"}>
                 Cart ({basketFiller.basketProducts.length})
               </Nav.Link>
             </Nav>
