@@ -6,17 +6,36 @@ export default function BasketProduct() {
   const basketFiller = useSelector((store) => store.basketReducer);
   const productBody = basketFiller.basketProducts.map((product) => {
     return (
-      <div class="container">
-        <div class="row row-cols-1 row-cols-md-2 row-cols-md-4">
-          <div class="col"><BasketImg src={product.productImage}/>{product.productName}</div>
-          <div class="col">{product.productPrice}</div>
-        <BasketButton className="btn btn-dark">DELETE</BasketButton>
-        </div>
-      </div>
+
+        <tr>
+            <td><BasketImg src={product.productImage}/>{product.productName}</td>
+            <td>{product.productPrice}</td>
+            <BasketButton className="btn btn-dark">DELETE</BasketButton>
+        </tr>
+    //   <div class="container">
+    //     <div class="row row-cols-1 row-cols-md-2 row-cols-md-4">
+    //       <div class="col"><BasketImg src={product.productImage}/>{product.productName}</div>
+    //       <div class="col">{product.productPrice}</div>
+    //     <BasketButton className="btn btn-dark">DELETE</BasketButton>
+    //     </div>
+    //   </div>
     );
   });
 
-  return <div>
-      <Container>{productBody}</Container>
+  return <div className="row justify-content-center">
+      <table>
+          <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Item Price</th>
+                <th>Remove</th>
+            </tr>
+          </thead>
+            {productBody}
+          <tbody>
+
+          </tbody>
+      </table>
+      
   </div>;
 }
