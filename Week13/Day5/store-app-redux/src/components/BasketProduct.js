@@ -4,13 +4,15 @@ import { BasketImg, BasketButton, Container } from "./Style";
 
 export default function BasketProduct() {
   const basketFiller = useSelector((store) => store.basketReducer);
+  const dispatch = useDispatch();
   const productBody = basketFiller.basketProducts.map((product) => {
     return (
 
         <tr>
             <td><BasketImg src={product.productImage}/>{product.productName}</td>
             <td>{product.productPrice}</td>
-            <BasketButton className="btn btn-dark">DELETE</BasketButton>
+            <BasketButton 
+            onClick={() => dispatch({type: "DELETE_PRODUCT_FROM_BASKET", payload: product})} className="btn btn-dark">DELETE</BasketButton>
         </tr>
     //   <div class="container">
     //     <div class="row row-cols-1 row-cols-md-2 row-cols-md-4">
@@ -21,6 +23,7 @@ export default function BasketProduct() {
     //   </div>
     );
   });
+
 
   return <div className="row justify-content-center">
       <table>
