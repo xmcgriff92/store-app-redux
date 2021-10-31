@@ -1,30 +1,21 @@
-import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { TableDiv } from './Style';
+import React from "react";
+import BasketProduct from "./BasketProduct";
 
 export default function Basket() {
-    const basketFiller = useSelector(store => store.basketReducer)
-    const tableBody = basketFiller.basketProducts.map((product) => {
-
-        return <tr>
-            <td></td>
-            <td></td>
-            <button>DELETE</button>
-        </tr>
-    })
-
-
-    return (
-        <TableDiv className="row align-items-center">
-            <table className="table table-dark table-bordered col-md-8 mt-8">
-                <thead>
-                    <tr>
-                        <th>Item Name</th>
-                        <th>Item Price</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-            </table>
-        </TableDiv>
-    )
+  return (
+    <div>
+        <h1>Basket</h1>
+      <div className="container">
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4 dark">
+          <div className="col"></div>
+          <div className="col">Name</div>
+          <div className="col">Price</div>
+          <div className="col">Action</div>
+        </div>
+      </div>
+      <div>
+        <BasketProduct />
+      </div>
+    </div>
+  );
 }

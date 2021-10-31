@@ -16,7 +16,7 @@ export default function Navbarrr() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link as={Link} to={"/"}>Home</Nav.Link>
-              <Nav.Link as={Link} to={"/additem"}>Add Items</Nav.Link>
+              <Nav.Link as={Link} to={"/about"}>About</Nav.Link>
             </Nav>
             <Nav>
               <Nav.Link eventKey={2} as={Link} to={"/basket"}>
