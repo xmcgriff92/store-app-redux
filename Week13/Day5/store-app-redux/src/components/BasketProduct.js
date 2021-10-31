@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { BasketImg, BasketButton, Container } from "./Style";
+import { BasketImg, BasketButton } from "./Style";
 
 export default function BasketProduct() {
   const basketFiller = useSelector((store) => store.basketReducer);
@@ -12,7 +12,8 @@ export default function BasketProduct() {
             <td><BasketImg src={product.productImage}/>{product.productName}</td>
             <td>{product.productPrice}</td>
             <BasketButton 
-            onClick={() => dispatch({type: "DELETE_PRODUCT_FROM_BASKET", payload: product})} className="btn btn-dark">DELETE</BasketButton>
+            onClick={() => dispatch({type: "DELETE_PRODUCT_FROM_BASKET", payload: product})} 
+            className="btn btn-dark">DELETE</BasketButton>
         </tr>
     //   <div class="container">
     //     <div class="row row-cols-1 row-cols-md-2 row-cols-md-4">
