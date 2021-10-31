@@ -13,19 +13,19 @@ height: 200px;
 `;
 
 export const BasketImg = styled.img`
-height: 80px;
+height: 50px;
 `;
 
 export const BasketButton = styled.button`
-height: 80px;
-width: 100px;
+height: 35px;
+width: 85px;
 `;
 
 export const ProductDiv = styled.div`
 text-align: center;
 `;
 
-export const TableDiv = styled.div`
+export const BasketDiv = styled.div`
 text-align: center;
 padding-top: 15px;
 padding-right: 60px;
@@ -33,8 +33,6 @@ padding-left: 60px;
 `;
 
 export const Container = styled.div`
-display: flex;
-flex-direction: column;
-background-color: black;
-width: 100%;
+
 `;
+
