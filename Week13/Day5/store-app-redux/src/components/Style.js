@@ -16,6 +16,11 @@ export const BasketImg = styled.img`
 height: 80px;
 `;
 
+export const BasketButton = styled.button`
+height: 80px;
+width: 100px;
+`;
+
 export const ProductDiv = styled.div`
 text-align: center;
 `;
