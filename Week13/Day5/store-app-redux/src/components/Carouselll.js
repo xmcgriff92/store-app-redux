@@ -37,9 +37,9 @@ export default function Carouselll() {
           />
 
           <Carousel.Caption>
-            <h3>Third slide label</h3>
+            <h3>Shop Android</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              From Samsung, Google, Sony, and many other Android brands!
             </p>
           </Carousel.Caption>
         </Carousel.Item>
