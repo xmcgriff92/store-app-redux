@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { BasketImg, BasketButton } from "./Style";
+import { BasketImg, BasketButton, TableT } from "./Style";
 import { BsTrash } from 'react-icons/bs';
 
 export default function BasketProduct() {
@@ -28,7 +28,7 @@ export default function BasketProduct() {
 
 
   return <div className="row justify-content-center">
-      <table>
+      <TableT>
           <thead>
             <tr>
                 <th>Item Name</th>
@@ -40,7 +40,7 @@ export default function BasketProduct() {
           <tbody>
 
           </tbody>
-      </table>
+      </TableT>
       
   </div>;
 }

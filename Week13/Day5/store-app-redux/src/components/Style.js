@@ -36,3 +36,30 @@ export const Container = styled.div`
 
 `;
 
+export const Header4 = styled.h4`
+text-align: center;
+margin-top: 15px;
+margin-bottom: 15px;
+`;
+
+export const BannerImg = styled.img`
+height: 500px
+`;
+
+export const TableT = styled.table`
+text-align: center;
+`;
+
+export const AboutH1 = styled.h1`
+text-align: center;
+margin-top: 15px;
+margin-bottom: 15px;
+`;
+
+export const AboutHP = styled.p`
+font-size: 35px;
+`;
+
+export const AboutConatiner = styled.div`
+text-align: center
+`;

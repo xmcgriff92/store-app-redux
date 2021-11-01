@@ -1,6 +1,7 @@
 import React from 'react'
 import { ProductH1, ProductH4, ProductImg, ProductDiv } from './Style';
 import { useDispatch } from 'react-redux';
+import { BsPlusSquare } from 'react-icons/bs'
 
 export default function Product({product}) {
     const dispatch = useDispatch();
@@ -10,7 +11,7 @@ export default function Product({product}) {
             <ProductH1>{product.productName}</ProductH1>
             <ProductImg src={product.productImage} className="img-fluid" alt=""/>
             <ProductH4>Price: {product.productPrice}</ProductH4>
-            <button onClick={() => {dispatch({type: "ADD_PRODUCT_TO_BASKET", payload: product})}} className="btn btn-dark">ADD TO CART</button>
+            <button onClick={() => {dispatch({type: "ADD_PRODUCT_TO_BASKET", payload: product})}} className="btn btn-dark"><BsPlusSquare/> ADD TO CART</button>
         </ProductDiv>
     )
 }

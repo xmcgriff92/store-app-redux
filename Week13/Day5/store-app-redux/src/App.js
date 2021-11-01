@@ -10,6 +10,7 @@ import { createStore } from "redux";
 import rootReducer from "./reducers/RootReducer";
 import { Provider } from "react-redux";
 import Carouselll from "./components/Carouselll";
+import Footer from "./components/Footer";
 
 
 
@@ -36,6 +37,7 @@ function App() {
               <Route exact path="/about" component={About} />
               <Route exact path="/basket" component={Basket} />
             </Switch>
+            <Footer/>
           </BrowserRouter>
         </PersistGate>
       </Provider>

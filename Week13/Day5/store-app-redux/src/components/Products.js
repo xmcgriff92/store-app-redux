@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Carouselll from './Carouselll';
 import Product from './Product';
+import { Header4 } from './Style';
 
 
 
@@ -21,6 +22,7 @@ const productData = productsList.map((product) => {
         <div className="container">
             <div className="row">
             <Carouselll/>
+            <Header4>Products</Header4>
                 {productData}
             </div>
         </div>
