@@ -32,8 +32,8 @@ padding-right: 60px;
 padding-left: 60px;
 `;
 
-export const Container = styled.div`
-
+export const FooterContainer = styled.div`
+text-align: center;
 `;
 
 export const Header4 = styled.h4`

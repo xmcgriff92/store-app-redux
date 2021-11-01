@@ -9,7 +9,6 @@ import { PersistGate } from "redux-persist/integration/react";
 import { createStore } from "redux";
 import rootReducer from "./reducers/RootReducer";
 import { Provider } from "react-redux";
-import Carouselll from "./components/Carouselll";
 import Footer from "./components/Footer";
 
 

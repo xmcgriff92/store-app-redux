@@ -1,4 +1,5 @@
 import React from "react";
+import { FooterContainer } from "./Style";
 import { Navbar, Container } from 'react-bootstrap';
 
 export default function Footer() {
@@ -6,7 +7,7 @@ export default function Footer() {
     <div>
       <Navbar bg="dark" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">Designed by Xavier J. McGriff</Navbar.Brand>
+          <Navbar.Brand href="#home"></Navbar.Brand>
         </Container>
       </Navbar>
     </div>
