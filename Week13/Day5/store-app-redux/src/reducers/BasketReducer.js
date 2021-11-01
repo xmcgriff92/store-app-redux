@@ -13,7 +13,8 @@ export const basketReducer = (state = initialState, action) =>
         }
         case "DELETE_PRODUCT_FROM_BASKET" : return {
             ...state,
-            basketProducts: state.basketProducts.filter(product=>product.productName!=action.payload.productName)
+            basketProducts: state.basketProducts.filter(product=>product.productName
+                !=action.payload.productName)
         }
     }
     return state

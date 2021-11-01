@@ -33,8 +33,18 @@ const initialState = {
     {
         productName: "GoPro HERO9 Camera",
         productImage: "https://www.leisurepro.com/Image/Product/Large/GOPH9.jpg",
-        productPrice: "399.99",
-    }
+        productPrice: "399.99"
+    },
+    {
+        productName: "iPad Pro WiFi",
+        productImage: "https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202104_FMT_WHH?wid=1945&hei=2000&fmt=jpeg&qlt=95&.v=1617126635000",
+        productPrice: "1199.99"
+    },
+    {
+        productName: "Vantop - Snaptain SP7100",
+        productImage: "https://pisces.bbystatic.com/image2/BestBuy_US/images/products/6473/6473300cv11d.jpg;maxHeight=640;maxWidth=550",
+        productPrice: "259.99"
+    },
 ]
 }
 
