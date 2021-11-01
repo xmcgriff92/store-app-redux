@@ -48,10 +48,10 @@ export default function About() {
 
         <AboutConatiner>
         <Header4>Our Mission: </Header4> 
-        <AboutHP>Our mission is what drives us to do everything possible to expand human potential. 
+        <AboutHP>Is what drives us to do everything possible to expand human potential. 
             We do that by creating groundbreaking technological innovations, by making our products more 
             sustainably, by building a creative and diverse global team and by making a positive impact 
-            in communities where we live and work.</AboutHP>
+            in communities where we live and work. Making life for the user much easier.</AboutHP>
         </AboutConatiner>
 
             <AboutConatiner>
