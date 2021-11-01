@@ -1,7 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import { useSelector } from "react-redux";
-import { basketReducer } from "../reducers/BasketReducer";
 import { Link } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
 import { IoHomeOutline } from "react-icons/io5"

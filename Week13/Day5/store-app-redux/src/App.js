@@ -9,6 +9,7 @@ import { PersistGate } from "redux-persist/integration/react";
 import { createStore } from "redux";
 import rootReducer from "./reducers/RootReducer";
 import { Provider } from "react-redux";
+import Carouselll from "./components/Carouselll";
 
 
 
@@ -30,6 +31,7 @@ function App() {
           <BrowserRouter>
             <Navbarrr />
             <Switch>
+            
               <Route exact path="/" component={Products} />
               <Route exact path="/about" component={About} />
               <Route exact path="/basket" component={Basket} />

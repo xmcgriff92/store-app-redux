@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import Carouselll from './Carouselll';
 import Product from './Product';
 
 
@@ -19,6 +20,7 @@ const productData = productsList.map((product) => {
     return (
         <div className="container">
             <div className="row">
+            <Carouselll/>
                 {productData}
             </div>
         </div>
